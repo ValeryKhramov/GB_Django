@@ -1,0 +1,37 @@
+Watching for file changes with StatReloader
+D:\GeekBrains\Django\Lessons\lectures\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GeekBrains\Django\Lessons\lectures\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GeekBrains\Django\Lessons\lectures\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13
+"GET /about/ HTTP/1.1" 200 27
+D:\GeekBrains\Django\Lessons\lectures\lectures\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Index page accessed
+"GET / HTTP/1.1" 200 13
+Not Found: /index
+"GET /index HTTP/1.1" 404 2422
+Error in about page: division by zero
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\Lessons\lectures\myapp\views.py", line 16, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+"GET /about/ HTTP/1.1" 200 27
+D:\GeekBrains\Django\Lessons\lectures\lectures\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GeekBrains\Django\Lessons\lectures\lectures\settings.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO D:\GeekBrains\Django\Lessons\lectures\lectures\settings.py changed, reloading.
+INFO 2024-03-22 23:09:56,320 autoreload 1468 15992 Watching for file changes with StatReloader
+INFO 2024-03-22 23:09:57,813 views 1468 15644 Index page accessed
+INFO 2024-03-22 23:09:57,814 basehttp 1468 15644 "GET / HTTP/1.1" 200 13
+ERROR 2024-03-22 23:10:02,024 views 1468 15644 Error in about page: division by zero
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\Lessons\lectures\myapp\views.py", line 16, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+INFO 2024-03-22 23:10:02,025 basehttp 1468 15644 "GET /about/ HTTP/1.1" 200 27
