@@ -7,4 +7,5 @@ urlpatterns = [
     path('heads/', views.heads_or_tails, name='heads_or_tails'),
     path('cub/', views.cub, name='cub'),
     path('numbers/', views.numbers, name='numbers'),
+    path('coin_values/', views.coin_values, name='coin_values'),
 ]

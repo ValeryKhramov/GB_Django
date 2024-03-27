@@ -2,3 +2,342 @@ INFO 2024-03-23 23:58:03,989 autoreload 12300 15724 Watching for file changes wi
 INFO 2024-03-23 23:58:06,527 basehttp 12300 14772 "GET / HTTP/1.1" 200 13
 INFO 2024-03-23 23:58:13,279 basehttp 12300 14772 "GET / HTTP/1.1" 200 13
 INFO 2024-03-23 23:58:20,989 basehttp 12300 14772 "GET /cub/ HTTP/1.1" 200 1
+INFO 2024-03-27 22:13:01,056 autoreload 18028 16176 Watching for file changes with StatReloader
+INFO 2024-03-27 22:13:02,660 basehttp 18028 12456 "GET / HTTP/1.1" 200 13
+WARNING 2024-03-27 22:13:02,926 log 18028 12456 Not Found: /favicon.ico
+WARNING 2024-03-27 22:13:02,927 basehttp 18028 12456 "GET /favicon.ico HTTP/1.1" 404 2951
+INFO 2024-03-27 22:13:09,578 basehttp 18028 12456 "GET /about HTTP/1.1" 301 0
+INFO 2024-03-27 22:13:09,582 basehttp 18028 10420 "GET /about/ HTTP/1.1" 200 8
+INFO 2024-03-27 22:13:34,449 basehttp 18028 10420 "GET /about/ HTTP/1.1" 200 8
+INFO 2024-03-27 22:13:42,049 basehttp 18028 10420 "GET /heads HTTP/1.1" 301 0
+INFO 2024-03-27 22:13:42,051 basehttp 18028 16100 "GET /heads/ HTTP/1.1" 200 10
+INFO 2024-03-27 22:13:45,369 basehttp 18028 16100 "GET /heads/ HTTP/1.1" 200 8
+INFO 2024-03-27 22:13:48,939 basehttp 18028 16100 "GET /cub HTTP/1.1" 301 0
+INFO 2024-03-27 22:13:48,941 basehttp 18028 5844 "GET /cub/ HTTP/1.1" 200 1
+INFO 2024-03-27 22:13:54,263 basehttp 18028 5844 "GET /cub/ HTTP/1.1" 200 1
+INFO 2024-03-27 22:13:58,300 basehttp 18028 5844 "GET /numbers HTTP/1.1" 301 0
+INFO 2024-03-27 22:13:58,303 basehttp 18028 10040 "GET /numbers/ HTTP/1.1" 200 3
+INFO 2024-03-27 22:26:32,944 autoreload 18028 16176 D:\GeekBrains\Django\Seminars\myproject\myapp\models.py changed, reloading.
+INFO 2024-03-27 22:35:42,215 autoreload 15136 5000 Watching for file changes with StatReloader
+INFO 2024-03-27 22:36:11,865 autoreload 15136 5000 D:\GeekBrains\Django\Seminars\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 22:36:12,265 autoreload 16012 13780 Watching for file changes with StatReloader
+INFO 2024-03-27 22:36:15,785 autoreload 11788 4672 Watching for file changes with StatReloader
+INFO 2024-03-27 22:36:19,314 basehttp 11788 3908 "GET / HTTP/1.1" 200 13
+ERROR 2024-03-27 22:36:25,003 log 11788 3908 Internal Server Error: /heads/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'Решка'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\myapp\views.py", line 17, in heads_or_tails
+    choice_coin.save()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1036, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1080, in _do_update
+    filtered = base_qs.filter(pk=pk_val)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'Решка'.
+ERROR 2024-03-27 22:36:25,008 basehttp 11788 3908 "GET /heads/ HTTP/1.1" 500 143400
+INFO 2024-03-27 22:37:27,225 autoreload 11788 4672 D:\GeekBrains\Django\Seminars\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 22:37:30,566 autoreload 16264 5760 Watching for file changes with StatReloader
+INFO 2024-03-27 22:37:32,108 basehttp 16264 15764 "GET / HTTP/1.1" 200 13
+INFO 2024-03-27 22:37:37,167 basehttp 16264 15764 "GET /heads/ HTTP/1.1" 200 116
+INFO 2024-03-27 22:38:22,628 autoreload 16264 5760 D:\GeekBrains\Django\Seminars\myproject\myapp\migrations\0001_initial.py changed, reloading.
+INFO 2024-03-27 22:38:24,948 autoreload 14292 11884 Watching for file changes with StatReloader
+INFO 2024-03-27 22:38:26,193 basehttp 14292 17912 "GET / HTTP/1.1" 200 13
+INFO 2024-03-27 22:38:32,167 basehttp 14292 17912 "GET /heads/ HTTP/1.1" 200 116
+INFO 2024-03-27 22:57:45,973 autoreload 14292 11884 D:\GeekBrains\Django\Seminars\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 22:57:46,395 autoreload 328 17404 Watching for file changes with StatReloader
+INFO 2024-03-27 23:01:35,934 autoreload 328 17404 D:\GeekBrains\Django\Seminars\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 23:01:36,379 autoreload 18088 15968 Watching for file changes with StatReloader
+INFO 2024-03-27 23:01:44,717 autoreload 14292 12104 Watching for file changes with StatReloader
+INFO 2024-03-27 23:01:45,857 basehttp 14292 8528 "GET / HTTP/1.1" 200 13
+INFO 2024-03-27 23:01:55,989 basehttp 14292 8528 "GET /coin_values HTTP/1.1" 301 0
+INFO 2024-03-27 23:01:55,995 basehttp 14292 11612 "GET /coin_values/ HTTP/1.1" 200 5
+INFO 2024-03-27 23:08:03,400 autoreload 14292 12104 D:\GeekBrains\Django\Seminars\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 23:08:03,810 autoreload 16476 1880 Watching for file changes with StatReloader
+INFO 2024-03-27 23:08:06,531 autoreload 14636 10116 Watching for file changes with StatReloader
+INFO 2024-03-27 23:08:07,685 basehttp 14636 15564 "GET / HTTP/1.1" 200 13
+ERROR 2024-03-27 23:08:14,155 log 14636 15564 Internal Server Error: /coin_values/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\myapp\views.py", line 22, in coin_values
+    return HttpResponse(val for val in value)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+ERROR 2024-03-27 23:08:14,157 basehttp 14636 15564 "GET /coin_values/ HTTP/1.1" 500 65111
+INFO 2024-03-27 23:10:30,119 autoreload 14636 10116 D:\GeekBrains\Django\Seminars\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 23:10:30,530 autoreload 10328 11932 Watching for file changes with StatReloader
+INFO 2024-03-27 23:10:33,240 autoreload 11800 15576 Watching for file changes with StatReloader
+INFO 2024-03-27 23:10:34,461 basehttp 11800 11032 "GET / HTTP/1.1" 200 13
+ERROR 2024-03-27 23:10:39,126 log 11800 11032 Internal Server Error: /coin_values/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\myapp\views.py", line 23, in coin_values
+    for text in value:
+TypeError: 'NoneType' object is not iterable
+ERROR 2024-03-27 23:10:39,126 basehttp 11800 11032 "GET /coin_values/ HTTP/1.1" 500 65208
+INFO 2024-03-27 23:11:16,283 autoreload 11800 15576 D:\GeekBrains\Django\Seminars\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 23:11:16,700 autoreload 224 16032 Watching for file changes with StatReloader
+INFO 2024-03-27 23:11:19,690 autoreload 15020 7960 Watching for file changes with StatReloader
+INFO 2024-03-27 23:11:22,931 basehttp 15020 17696 "GET / HTTP/1.1" 200 13
+ERROR 2024-03-27 23:11:26,430 log 15020 17696 Internal Server Error: /coin_values/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\myapp\views.py", line 23, in coin_values
+    for text in value:
+TypeError: 'NoneType' object is not iterable
+ERROR 2024-03-27 23:11:26,430 basehttp 15020 17696 "GET /coin_values/ HTTP/1.1" 500 65224
+INFO 2024-03-27 23:13:11,767 autoreload 15020 7960 D:\GeekBrains\Django\Seminars\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 23:13:12,262 autoreload 17956 4980 Watching for file changes with StatReloader
+INFO 2024-03-27 23:13:13,603 basehttp 17956 17620 "GET / HTTP/1.1" 200 13
+INFO 2024-03-27 23:13:16,690 basehttp 17956 17620 "GET /coin_values/ HTTP/1.1" 200 6
+INFO 2024-03-27 23:13:17,508 basehttp 17956 17620 "GET /coin_values/ HTTP/1.1" 200 6
+INFO 2024-03-27 23:13:41,016 autoreload 17956 4980 D:\GeekBrains\Django\Seminars\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 23:13:41,445 autoreload 16672 18024 Watching for file changes with StatReloader
+INFO 2024-03-27 23:13:42,610 basehttp 16672 15296 "GET / HTTP/1.1" 200 13
+INFO 2024-03-27 23:13:45,020 basehttp 16672 15296 "GET /coin_values/ HTTP/1.1" 200 6
+INFO 2024-03-27 23:13:45,581 basehttp 16672 15296 "GET /coin_values/ HTTP/1.1" 200 6
+INFO 2024-03-27 23:14:24,425 autoreload 16672 18024 D:\GeekBrains\Django\Seminars\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 23:14:24,840 autoreload 16324 10004 Watching for file changes with StatReloader
+INFO 2024-03-27 23:14:28,239 basehttp 16324 7580 "GET / HTTP/1.1" 200 13
+ERROR 2024-03-27 23:14:30,789 log 16324 7580 Internal Server Error: /coin_values/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\myapp\views.py", line 22, in coin_values
+    print(type(list(value)))
+               ^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+ERROR 2024-03-27 23:14:30,790 basehttp 16324 7580 "GET /coin_values/ HTTP/1.1" 500 65356
+ERROR 2024-03-27 23:14:31,405 log 16324 7580 Internal Server Error: /coin_values/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\myapp\views.py", line 22, in coin_values
+    print(type(list(value)))
+               ^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+ERROR 2024-03-27 23:14:31,407 basehttp 16324 7580 "GET /coin_values/ HTTP/1.1" 500 65082
+INFO 2024-03-27 23:15:18,038 autoreload 16324 10004 D:\GeekBrains\Django\Seminars\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 23:15:18,455 autoreload 17640 17124 Watching for file changes with StatReloader
+INFO 2024-03-27 23:15:34,955 basehttp 17640 13060 "GET / HTTP/1.1" 200 13
+INFO 2024-03-27 23:15:37,683 basehttp 17640 13060 "GET /coin_values/ HTTP/1.1" 200 6
+INFO 2024-03-27 23:15:38,390 basehttp 17640 13060 "GET /coin_values/ HTTP/1.1" 200 6
+INFO 2024-03-27 23:16:27,825 autoreload 17640 17124 D:\GeekBrains\Django\Seminars\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 23:16:28,223 autoreload 14560 15652 Watching for file changes with StatReloader
+INFO 2024-03-27 23:16:29,708 basehttp 14560 10512 "GET / HTTP/1.1" 200 13
+INFO 2024-03-27 23:16:32,572 basehttp 14560 10512 "GET /coin_values/ HTTP/1.1" 200 234
+INFO 2024-03-27 23:16:33,237 basehttp 14560 10512 "GET /coin_values/ HTTP/1.1" 200 234
+INFO 2024-03-27 23:16:52,916 autoreload 14560 15652 D:\GeekBrains\Django\Seminars\myproject\myapp\views.py changed, reloading.
+INFO 2024-03-27 23:16:53,310 autoreload 12948 17832 Watching for file changes with StatReloader
+INFO 2024-03-27 23:16:54,602 basehttp 12948 18192 "GET / HTTP/1.1" 200 13
+INFO 2024-03-27 23:16:58,667 basehttp 12948 18192 "GET /coin_values/ HTTP/1.1" 200 240
+INFO 2024-03-27 23:16:59,288 basehttp 12948 18192 "GET /coin_values/ HTTP/1.1" 200 240
+INFO 2024-03-27 23:19:38,098 autoreload 12948 17832 D:\GeekBrains\Django\Seminars\myproject\myapp\models.py changed, reloading.
+INFO 2024-03-27 23:19:38,516 autoreload 16252 8324 Watching for file changes with StatReloader
+INFO 2024-03-27 23:20:07,169 autoreload 16252 8324 D:\GeekBrains\Django\Seminars\myproject\myapp\models.py changed, reloading.
+INFO 2024-03-27 23:20:07,635 autoreload 6332 4992 Watching for file changes with StatReloader
+INFO 2024-03-27 23:21:48,339 autoreload 6332 4992 D:\GeekBrains\Django\Seminars\myproject\myapp\models.py changed, reloading.
+INFO 2024-03-27 23:21:48,788 autoreload 5732 5716 Watching for file changes with StatReloader
+INFO 2024-03-27 23:23:10,977 autoreload 5732 5716 D:\GeekBrains\Django\Seminars\myproject\myapp\models.py changed, reloading.
+INFO 2024-03-27 23:23:11,438 autoreload 10800 9376 Watching for file changes with StatReloader
+INFO 2024-03-27 23:29:02,747 autoreload 10800 9376 D:\GeekBrains\Django\Seminars\myproject\myapp\models.py changed, reloading.
+INFO 2024-03-27 23:29:03,180 autoreload 18248 11584 Watching for file changes with StatReloader
+INFO 2024-03-27 23:45:52,471 autoreload 18416 7884 Watching for file changes with StatReloader
+WARNING 2024-03-27 23:45:53,856 log 18416 5740 Not Found: /
+WARNING 2024-03-27 23:45:53,856 basehttp 18416 5740 "GET / HTTP/1.1" 404 2271
+INFO 2024-03-27 23:46:13,815 basehttp 18416 5740 "GET /blog HTTP/1.1" 200 7
+INFO 2024-03-27 23:58:14,564 autoreload 13180 11312 Watching for file changes with StatReloader
+WARNING 2024-03-27 23:58:15,715 log 13180 17680 Not Found: /
+WARNING 2024-03-27 23:58:15,715 basehttp 13180 17680 "GET / HTTP/1.1" 404 2271
+WARNING 2024-03-27 23:58:23,647 log 13180 17680 Not Found: /blog/fake_data
+WARNING 2024-03-27 23:58:23,647 basehttp 13180 17680 "GET /blog/fake_data HTTP/1.1" 404 2570
+INFO 2024-03-27 23:58:55,418 autoreload 13180 11312 D:\GeekBrains\Django\Seminars\myproject\blogapp\urls.py changed, reloading.
+INFO 2024-03-27 23:58:55,822 autoreload 17404 10212 Watching for file changes with StatReloader
+WARNING 2024-03-27 23:58:57,385 log 17404 9056 Not Found: /
+WARNING 2024-03-27 23:58:57,387 basehttp 17404 9056 "GET / HTTP/1.1" 404 2271
+WARNING 2024-03-27 23:59:06,265 log 17404 9056 Not Found: /blog/fake_data
+WARNING 2024-03-27 23:59:06,266 basehttp 17404 9056 "GET /blog/fake_data HTTP/1.1" 404 2571
+INFO 2024-03-28 00:01:21,275 autoreload 17404 10212 D:\GeekBrains\Django\Seminars\myproject\blogapp\views.py changed, reloading.
+INFO 2024-03-28 00:01:21,710 autoreload 11056 16156 Watching for file changes with StatReloader
+WARNING 2024-03-28 00:03:56,175 log 11056 13852 Not Found: /
+WARNING 2024-03-28 00:03:56,175 basehttp 11056 13852 "GET / HTTP/1.1" 404 2271
+INFO 2024-03-28 00:03:56,508 autoreload 11056 16156 D:\GeekBrains\Django\Seminars\myproject\blogapp\models.py changed, reloading.
+INFO 2024-03-28 00:03:57,020 autoreload 1796 17996 Watching for file changes with StatReloader
+WARNING 2024-03-28 00:04:07,494 log 1796 18400 Not Found: /blog/fake_data
+WARNING 2024-03-28 00:04:07,494 basehttp 1796 18400 "GET /blog/fake_data HTTP/1.1" 404 2571
+INFO 2024-03-28 00:05:53,040 autoreload 1796 17996 D:\GeekBrains\Django\Seminars\myproject\blogapp\urls.py changed, reloading.
+INFO 2024-03-28 00:05:53,477 autoreload 14628 6052 Watching for file changes with StatReloader
+INFO 2024-03-28 00:06:28,487 autoreload 16588 13716 Watching for file changes with StatReloader
+INFO 2024-03-28 00:06:44,917 autoreload 16588 13716 D:\GeekBrains\Django\Seminars\myproject\blogapp\urls.py changed, reloading.
+INFO 2024-03-28 00:06:47,720 autoreload 12532 15452 Watching for file changes with StatReloader
+WARNING 2024-03-28 00:06:50,000 log 12532 16856 Not Found: /
+WARNING 2024-03-28 00:06:50,002 basehttp 12532 16856 "GET / HTTP/1.1" 404 2271
+WARNING 2024-03-28 00:06:59,928 log 12532 16856 Not Found: /blog/add_author
+WARNING 2024-03-28 00:06:59,930 basehttp 12532 16856 "GET /blog/add_author HTTP/1.1" 404 2575
+INFO 2024-03-28 00:08:39,702 autoreload 12532 15452 D:\GeekBrains\Django\Seminars\myproject\blogapp\urls.py changed, reloading.
+INFO 2024-03-28 00:08:40,139 autoreload 17620 11980 Watching for file changes with StatReloader
+INFO 2024-03-28 00:09:55,643 autoreload 10832 17428 Watching for file changes with StatReloader
+WARNING 2024-03-28 00:11:00,982 log 10832 14792 Not Found: /
+WARNING 2024-03-28 00:11:00,983 basehttp 10832 14792 "GET / HTTP/1.1" 404 2271
+INFO 2024-03-28 00:11:05,021 basehttp 10832 14792 "GET /blog HTTP/1.1" 200 7
+WARNING 2024-03-28 00:11:10,485 log 10832 14792 Not Found: /about/
+WARNING 2024-03-28 00:11:10,486 basehttp 10832 14792 "GET /about/ HTTP/1.1" 404 2307
+WARNING 2024-03-28 00:11:14,684 log 10832 14792 Not Found: /add_author
+WARNING 2024-03-28 00:11:14,684 basehttp 10832 14792 "GET /add_author HTTP/1.1" 404 2319
+WARNING 2024-03-28 00:11:29,562 log 10832 14792 Not Found: /blog/add_author
+WARNING 2024-03-28 00:11:29,563 basehttp 10832 14792 "GET /blog/add_author HTTP/1.1" 404 2576
+INFO 2024-03-28 00:14:21,863 autoreload 10832 17428 D:\GeekBrains\Django\Seminars\myproject\myproject\urls.py changed, reloading.
+INFO 2024-03-28 00:14:22,274 autoreload 16984 14460 Watching for file changes with StatReloader
+INFO 2024-03-28 00:14:24,573 autoreload 11688 8900 Watching for file changes with StatReloader
+WARNING 2024-03-28 00:14:25,535 log 11688 5860 Not Found: /
+WARNING 2024-03-28 00:14:25,535 basehttp 11688 5860 "GET / HTTP/1.1" 404 2510
+INFO 2024-03-28 00:14:32,864 basehttp 11688 5860 "GET /index HTTP/1.1" 200 7
+WARNING 2024-03-28 00:14:37,775 log 11688 5860 Not Found: /about/
+WARNING 2024-03-28 00:14:37,775 basehttp 11688 5860 "GET /about/ HTTP/1.1" 404 2546
+INFO 2024-03-28 00:14:41,548 basehttp 11688 5860 "GET /add_author HTTP/1.1" 301 0
+ERROR 2024-03-28 00:14:41,621 log 11688 6356 Internal Server Error: /add_author/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: blogapp_author.birthday
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\blogapp\views.py", line 13, in add_author
+    author.save()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: blogapp_author.birthday
+ERROR 2024-03-28 00:14:41,626 basehttp 11688 6356 "GET /add_author/ HTTP/1.1" 500 148146
+INFO 2024-03-28 00:15:43,084 autoreload 11688 8900 D:\GeekBrains\Django\Seminars\myproject\blogapp\views.py changed, reloading.
+INFO 2024-03-28 00:15:43,494 autoreload 9932 5776 Watching for file changes with StatReloader
+INFO 2024-03-28 00:15:55,913 autoreload 9932 5776 D:\GeekBrains\Django\Seminars\myproject\blogapp\urls.py changed, reloading.
+INFO 2024-03-28 00:15:56,327 autoreload 2864 2620 Watching for file changes with StatReloader
+INFO 2024-03-28 00:15:57,382 basehttp 2864 3448 "GET / HTTP/1.1" 200 7
+WARNING 2024-03-28 00:16:00,472 log 2864 3448 Not Found: /about/
+WARNING 2024-03-28 00:16:00,472 basehttp 2864 3448 "GET /about/ HTTP/1.1" 404 2541
+INFO 2024-03-28 00:16:04,661 basehttp 2864 3448 "GET /add_author/ HTTP/1.1" 200 49
+INFO 2024-03-28 00:18:34,894 autoreload 2864 2620 D:\GeekBrains\Django\Seminars\myproject\blogapp\models.py changed, reloading.
+INFO 2024-03-28 00:19:32,053 autoreload 17480 8712 Watching for file changes with StatReloader
+INFO 2024-03-28 00:19:33,064 basehttp 17480 17396 "GET / HTTP/1.1" 200 7
+WARNING 2024-03-28 00:19:36,042 log 17480 17396 Not Found: /about/
+WARNING 2024-03-28 00:19:36,043 basehttp 17480 17396 "GET /about/ HTTP/1.1" 404 2541
+INFO 2024-03-28 00:19:37,496 basehttp 17480 17396 "GET /add_author/ HTTP/1.1" 200 49
