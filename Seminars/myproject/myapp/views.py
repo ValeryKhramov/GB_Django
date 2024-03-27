@@ -1,7 +1,6 @@
-import random
-
 from django.http import HttpResponse
 from random import choice, randint
+from myapp.models import Coin
 
 
 def index(request):
@@ -13,7 +12,17 @@ def about(request):
 
 
 def heads_or_tails(request):
-    return HttpResponse(choice(['Орёл', 'Решка']))
+    choice_coin = Coin(result=choice(['Орёл', 'Решка']))
+    choice_coin.save()
+    return HttpResponse(choice_coin)
+
+
+def coin_values(request):
+    value = Coin.values()
+    result = ''
+    for i in value:
+        result += str(i) + '<br>'
+    return HttpResponse(result)
 
 
 def cub(request):
