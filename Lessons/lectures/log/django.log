@@ -42,3 +42,149 @@ INFO 2024-03-26 21:47:00,671 basehttp 15120 15196 "GET / HTTP/1.1" 200 13
 WARNING 2024-03-26 21:47:00,907 log 15120 15196 Not Found: /favicon.ico
 WARNING 2024-03-26 21:47:00,907 basehttp 15120 15196 "GET /favicon.ico HTTP/1.1" 404 2440
 INFO 2024-03-26 21:50:56,572 autoreload 7304 2648 Watching for file changes with StatReloader
+INFO 2024-04-01 08:49:34,490 autoreload 18092 13944 Watching for file changes with StatReloader
+INFO 2024-04-01 08:50:49,767 autoreload 18092 13944 D:\GeekBrains\Django\Lessons\lectures\myapp3\urls.py changed, reloading.
+INFO 2024-04-01 08:50:50,166 autoreload 18360 13880 Watching for file changes with StatReloader
+INFO 2024-04-01 08:50:52,113 basehttp 18360 18356 "GET / HTTP/1.1" 200 27
+WARNING 2024-04-01 08:50:52,270 log 18360 18356 Not Found: /favicon.ico
+WARNING 2024-04-01 08:50:52,271 basehttp 18360 18356 "GET /favicon.ico HTTP/1.1" 404 2378
+INFO 2024-04-01 08:55:04,382 autoreload 18360 13880 D:\GeekBrains\Django\Lessons\lectures\myapp3\views.py changed, reloading.
+INFO 2024-04-01 08:55:04,811 autoreload 15500 9524 Watching for file changes with StatReloader
+INFO 2024-04-01 08:55:07,329 basehttp 15500 18064 "GET / HTTP/1.1" 200 27
+INFO 2024-04-01 08:55:12,477 basehttp 15500 18064 "GET / HTTP/1.1" 200 27
+INFO 2024-04-01 08:55:14,465 basehttp 15500 18064 "GET / HTTP/1.1" 200 27
+INFO 2024-04-01 08:57:16,106 autoreload 15500 9524 D:\GeekBrains\Django\Lessons\lectures\myapp3\urls.py changed, reloading.
+INFO 2024-04-01 08:57:16,533 autoreload 5468 2524 Watching for file changes with StatReloader
+WARNING 2024-04-01 08:57:17,759 log 5468 2968 Not Found: /
+WARNING 2024-04-01 08:57:17,760 basehttp 5468 2968 "GET / HTTP/1.1" 404 2502
+WARNING 2024-04-01 08:57:20,746 log 5468 2968 Not Found: /heads
+WARNING 2024-04-01 08:57:20,746 basehttp 5468 2968 "GET /heads HTTP/1.1" 404 2535
+INFO 2024-04-01 08:57:21,947 basehttp 5468 2968 "GET /hello HTTP/1.1" 301 0
+INFO 2024-04-01 08:57:21,949 basehttp 5468 17336 "GET /hello/ HTTP/1.1" 200 27
+INFO 2024-04-01 08:57:25,325 basehttp 5468 17336 "GET /hello2 HTTP/1.1" 301 0
+INFO 2024-04-01 08:57:25,328 basehttp 5468 5732 "GET /hello2/ HTTP/1.1" 200 23
+INFO 2024-04-01 10:17:23,863 autoreload 5468 2524 D:\GeekBrains\Django\Lessons\lectures\myapp3\urls.py changed, reloading.
+INFO 2024-04-01 10:17:24,610 autoreload 2880 12700 Watching for file changes with StatReloader
+INFO 2024-04-01 10:17:34,137 autoreload 2880 12700 D:\GeekBrains\Django\Lessons\lectures\myapp3\urls.py changed, reloading.
+INFO 2024-04-01 10:17:34,848 autoreload 3436 2304 Watching for file changes with StatReloader
+INFO 2024-04-01 10:19:58,102 autoreload 3436 2304 D:\GeekBrains\Django\Lessons\lectures\myapp3\views.py changed, reloading.
+INFO 2024-04-01 10:19:58,796 autoreload 16988 13480 Watching for file changes with StatReloader
+INFO 2024-04-01 10:21:27,003 autoreload 16988 13480 D:\GeekBrains\Django\Lessons\lectures\myapp3\views.py changed, reloading.
+INFO 2024-04-01 10:21:27,691 autoreload 11232 6328 Watching for file changes with StatReloader
+INFO 2024-04-01 10:22:53,841 autoreload 11232 6328 D:\GeekBrains\Django\Lessons\lectures\myapp3\views.py changed, reloading.
+INFO 2024-04-01 10:22:54,562 autoreload 4936 10016 Watching for file changes with StatReloader
+INFO 2024-04-01 10:23:49,029 autoreload 4936 10016 D:\GeekBrains\Django\Lessons\lectures\myapp3\urls.py changed, reloading.
+INFO 2024-04-01 10:23:49,735 autoreload 18280 14396 Watching for file changes with StatReloader
+WARNING 2024-04-01 10:25:15,288 log 18280 2020 Not Found: /
+WARNING 2024-04-01 10:25:15,288 basehttp 18280 2020 "GET / HTTP/1.1" 404 3123
+INFO 2024-04-01 10:25:29,099 basehttp 18280 2020 "GET /posts/2022/6/python/ HTTP/1.1" 200 360
+INFO 2024-04-01 10:28:03,812 basehttp 18280 2020 "GET /posts/2022/ HTTP/1.1" 200 18
+INFO 2024-04-01 10:29:12,960 basehttp 18280 2020 "GET /posts/2022/6 HTTP/1.1" 301 0
+INFO 2024-04-01 10:29:12,965 basehttp 18280 18352 "GET /posts/2022/6/ HTTP/1.1" 200 21
+INFO 2024-04-01 10:38:08,656 autoreload 18280 14396 D:\GeekBrains\Django\Lessons\lectures\myapp3\views.py changed, reloading.
+INFO 2024-04-01 10:38:09,346 autoreload 14844 12500 Watching for file changes with StatReloader
+INFO 2024-04-01 10:40:15,447 autoreload 14844 12500 D:\GeekBrains\Django\Lessons\lectures\myapp3\urls.py changed, reloading.
+INFO 2024-04-01 10:40:16,130 autoreload 5400 12040 Watching for file changes with StatReloader
+INFO 2024-04-01 10:40:19,088 basehttp 5400 18232 "GET / HTTP/1.1" 200 176
+INFO 2024-04-01 10:45:55,123 autoreload 5400 12040 D:\GeekBrains\Django\Lessons\lectures\myapp3\views.py changed, reloading.
+INFO 2024-04-01 10:45:55,757 autoreload 5356 13952 Watching for file changes with StatReloader
+INFO 2024-04-01 10:49:46,768 autoreload 5356 13952 D:\GeekBrains\Django\Lessons\lectures\myapp3\views.py changed, reloading.
+INFO 2024-04-01 10:49:47,547 autoreload 4592 17072 Watching for file changes with StatReloader
+INFO 2024-04-01 10:49:49,448 basehttp 4592 13504 "GET / HTTP/1.1" 200 176
+INFO 2024-04-01 10:49:53,752 basehttp 4592 13504 "GET /if HTTP/1.1" 301 0
+INFO 2024-04-01 10:49:53,760 basehttp 4592 5956 "GET /if/ HTTP/1.1" 200 370
+INFO 2024-04-01 10:52:18,706 autoreload 4592 17072 D:\GeekBrains\Django\Lessons\lectures\myapp3\views.py changed, reloading.
+INFO 2024-04-01 10:52:19,699 autoreload 18236 9168 Watching for file changes with StatReloader
+INFO 2024-04-01 10:53:43,763 autoreload 18236 9168 D:\GeekBrains\Django\Lessons\lectures\myapp3\views.py changed, reloading.
+INFO 2024-04-01 10:53:44,408 autoreload 17000 16056 Watching for file changes with StatReloader
+INFO 2024-04-01 10:53:45,688 basehttp 17000 9512 "GET / HTTP/1.1" 200 176
+INFO 2024-04-01 10:53:49,676 basehttp 17000 9512 "GET /for HTTP/1.1" 301 0
+INFO 2024-04-01 10:53:49,680 basehttp 17000 1108 "GET /for/ HTTP/1.1" 200 940
+INFO 2024-04-01 11:07:27,284 autoreload 17000 16056 D:\GeekBrains\Django\Lessons\lectures\myapp3\views.py changed, reloading.
+INFO 2024-04-01 11:07:28,287 autoreload 10092 17904 Watching for file changes with StatReloader
+INFO 2024-04-01 11:07:30,046 basehttp 10092 10156 "GET / HTTP/1.1" 200 176
+WARNING 2024-04-01 11:07:34,569 log 10092 10156 Not Found: /index
+WARNING 2024-04-01 11:07:34,575 basehttp 10092 10156 "GET /index HTTP/1.1" 404 3653
+INFO 2024-04-01 11:08:49,756 autoreload 10092 17904 D:\GeekBrains\Django\Lessons\lectures\myapp3\urls.py changed, reloading.
+INFO 2024-04-01 11:08:50,490 autoreload 9040 16456 Watching for file changes with StatReloader
+INFO 2024-04-01 11:08:52,839 basehttp 9040 17644 "GET / HTTP/1.1" 200 176
+INFO 2024-04-01 11:08:56,214 basehttp 9040 17644 "GET /index HTTP/1.1" 301 0
+INFO 2024-04-01 11:08:56,228 basehttp 9040 5596 "GET /index/ HTTP/1.1" 200 251
+INFO 2024-04-01 11:08:56,437 basehttp 9040 5596 "GET /index/ HTTP/1.1" 200 251
+INFO 2024-04-01 11:08:58,733 basehttp 9040 5596 "GET /index/ HTTP/1.1" 200 251
+INFO 2024-04-01 11:09:00,398 basehttp 9040 5596 "GET /about HTTP/1.1" 301 0
+INFO 2024-04-01 11:09:00,408 basehttp 9040 2676 "GET /about/ HTTP/1.1" 200 257
+INFO 2024-04-01 11:09:01,755 basehttp 9040 2676 "GET /about/ HTTP/1.1" 200 257
+INFO 2024-04-01 11:12:59,603 autoreload 9040 16456 D:\GeekBrains\Django\Lessons\lectures\lectures\settings.py changed, reloading.
+INFO 2024-04-01 11:13:00,335 autoreload 1988 18148 Watching for file changes with StatReloader
+INFO 2024-04-01 11:13:01,522 basehttp 1988 14920 "GET / HTTP/1.1" 200 176
+INFO 2024-04-01 11:13:07,955 basehttp 1988 14920 "GET /about/ HTTP/1.1" 200 257
+WARNING 2024-04-01 11:13:09,265 log 1988 14920 Not Found: /avout
+WARNING 2024-04-01 11:13:09,266 basehttp 1988 14920 "GET /avout HTTP/1.1" 404 3987
+INFO 2024-04-01 11:13:12,602 basehttp 1988 14920 "GET /about/ HTTP/1.1" 200 257
+INFO 2024-04-01 11:13:12,773 basehttp 1988 14920 "GET /about/ HTTP/1.1" 200 257
+INFO 2024-04-01 11:13:15,168 basehttp 1988 14920 "GET /about/ HTTP/1.1" 200 257
+INFO 2024-04-01 11:13:16,613 basehttp 1988 14920 "GET /index/ HTTP/1.1" 200 315
+INFO 2024-04-01 11:13:17,603 basehttp 1988 14920 "GET /index/ HTTP/1.1" 200 315
+INFO 2024-04-01 11:16:10,996 autoreload 1988 18148 D:\GeekBrains\Django\Lessons\lectures\lectures\urls.py changed, reloading.
+INFO 2024-04-01 11:16:11,671 autoreload 12276 16408 Watching for file changes with StatReloader
+INFO 2024-04-01 11:22:22,992 basehttp 12276 2408 "GET / HTTP/1.1" 200 315
+WARNING 2024-04-01 11:23:50,653 log 12276 7020 Not Found: /favicon.ico
+WARNING 2024-04-01 11:23:50,655 basehttp 12276 7020 "GET /favicon.ico HTTP/1.1" 404 2423
+INFO 2024-04-01 11:25:29,938 autoreload 12276 16408 D:\GeekBrains\Django\Lessons\lectures\myapp3\models.py changed, reloading.
+INFO 2024-04-01 11:25:30,595 autoreload 5688 13220 Watching for file changes with StatReloader
+INFO 2024-04-01 11:28:30,176 autoreload 5688 13220 D:\GeekBrains\Django\Lessons\lectures\myapp3\models.py changed, reloading.
+INFO 2024-04-01 11:28:30,947 autoreload 12040 3572 Watching for file changes with StatReloader
+INFO 2024-04-01 11:29:32,758 autoreload 12040 3572 D:\GeekBrains\Django\Lessons\lectures\myapp3\models.py changed, reloading.
+INFO 2024-04-01 11:29:33,368 autoreload 16460 4652 Watching for file changes with StatReloader
+INFO 2024-04-01 11:57:18,882 autoreload 11844 15204 Watching for file changes with StatReloader
+INFO 2024-04-01 11:59:09,878 basehttp 11844 18396 "GET / HTTP/1.1" 200 315
+WARNING 2024-04-01 11:59:30,421 log 11844 18396 Not Found: /author/5/
+WARNING 2024-04-01 11:59:30,422 basehttp 11844 18396 "GET /author/5/ HTTP/1.1" 404 2417
+WARNING 2024-04-01 11:59:58,315 log 11844 18396 Not Found: /myapp3/author/5/
+WARNING 2024-04-01 11:59:58,316 basehttp 11844 18396 "GET /myapp3/author/5/ HTTP/1.1" 404 4812
+WARNING 2024-04-01 12:00:18,860 log 11844 18396 Not Found: /myapp3/author/5/
+WARNING 2024-04-01 12:00:18,861 basehttp 11844 18396 "GET /myapp3/author/5/ HTTP/1.1" 404 4812
+INFO 2024-04-01 12:01:26,481 basehttp 11844 18396 "GET /myapp3 HTTP/1.1" 200 176
+WARNING 2024-04-01 12:01:34,145 log 11844 18396 Not Found: /myapp3/author/5/
+WARNING 2024-04-01 12:01:34,146 basehttp 11844 18396 "GET /myapp3/author/5/ HTTP/1.1" 404 4812
+WARNING 2024-04-01 12:02:07,302 log 11844 18396 Not Found: /myapp3/index
+WARNING 2024-04-01 12:02:07,303 basehttp 11844 18396 "GET /myapp3/index HTTP/1.1" 404 4800
+WARNING 2024-04-01 12:02:21,600 log 11844 18396 Not Found: /myapp3/hello
+WARNING 2024-04-01 12:02:21,600 basehttp 11844 18396 "GET /myapp3/hello HTTP/1.1" 404 4800
+WARNING 2024-04-01 12:02:46,407 log 11844 18396 Not Found: /hello/
+WARNING 2024-04-01 12:02:46,409 basehttp 11844 18396 "GET /hello/ HTTP/1.1" 404 2408
+INFO 2024-04-01 12:02:54,395 basehttp 11844 18396 "GET /myapp3 HTTP/1.1" 200 176
+WARNING 2024-04-01 12:03:04,337 log 11844 18396 Not Found: /myapp3/about
+WARNING 2024-04-01 12:03:04,337 basehttp 11844 18396 "GET /myapp3/about HTTP/1.1" 404 4800
+INFO 2024-04-01 12:03:59,831 basehttp 11844 18396 "GET / HTTP/1.1" 200 315
+WARNING 2024-04-01 12:04:18,656 log 11844 18396 Not Found: /about/
+WARNING 2024-04-01 12:04:18,656 basehttp 11844 18396 "GET /about/ HTTP/1.1" 404 2408
+WARNING 2024-04-01 12:04:21,421 log 11844 18396 Not Found: /about/
+WARNING 2024-04-01 12:04:21,422 basehttp 11844 18396 "GET /about/ HTTP/1.1" 404 2408
+INFO 2024-04-01 12:04:24,010 basehttp 11844 18396 "GET / HTTP/1.1" 200 315
+INFO 2024-04-01 12:04:26,014 basehttp 11844 18396 "GET / HTTP/1.1" 200 315
+WARNING 2024-04-01 12:04:45,414 log 11844 18396 Not Found: /myapp3/author/5/
+WARNING 2024-04-01 12:04:45,414 basehttp 11844 18396 "GET /myapp3/author/5/ HTTP/1.1" 404 4812
+INFO 2024-04-01 12:09:07,132 autoreload 2372 9764 Watching for file changes with StatReloader
+INFO 2024-04-01 12:09:08,566 basehttp 2372 9444 "GET / HTTP/1.1" 200 315
+WARNING 2024-04-01 12:09:24,928 log 2372 9444 Not Found: /myapp3/author/5
+WARNING 2024-04-01 12:09:24,928 basehttp 2372 9444 "GET /myapp3/author/5 HTTP/1.1" 404 4809
+INFO 2024-04-01 12:10:22,667 basehttp 2372 9444 "GET /myapp3 HTTP/1.1" 200 176
+WARNING 2024-04-01 12:10:35,672 log 2372 9444 Not Found: /myapp3/for
+WARNING 2024-04-01 12:10:35,674 basehttp 2372 9444 "GET /myapp3/for HTTP/1.1" 404 4794
+INFO 2024-04-01 12:11:25,006 autoreload 2372 9764 D:\GeekBrains\Django\Lessons\lectures\lectures\urls.py changed, reloading.
+INFO 2024-04-01 12:11:25,675 autoreload 10016 17676 Watching for file changes with StatReloader
+INFO 2024-04-01 12:11:51,573 autoreload 10016 17676 D:\GeekBrains\Django\Lessons\lectures\lectures\urls.py changed, reloading.
+INFO 2024-04-01 12:11:52,241 autoreload 3140 17748 Watching for file changes with StatReloader
+WARNING 2024-04-01 12:11:55,672 log 3140 15032 Not Found: /myapp3/hello
+WARNING 2024-04-01 12:11:55,673 basehttp 3140 15032 "GET /myapp3/hello HTTP/1.1" 404 4800
+INFO 2024-04-01 12:13:06,564 autoreload 3140 17748 D:\GeekBrains\Django\Lessons\lectures\lectures\urls.py changed, reloading.
+INFO 2024-04-01 12:13:07,280 autoreload 16604 15280 Watching for file changes with StatReloader
+INFO 2024-04-01 12:13:09,116 basehttp 16604 12284 "GET /myapp3/hello HTTP/1.1" 301 0
+INFO 2024-04-01 12:13:09,120 basehttp 16604 3456 "GET /myapp3/hello/ HTTP/1.1" 200 27
+INFO 2024-04-01 12:13:16,300 basehttp 16604 3456 "GET /myapp3/author/5 HTTP/1.1" 301 0
+INFO 2024-04-01 12:13:16,317 basehttp 16604 16148 "GET /myapp3/author/5/ HTTP/1.1" 200 1439
+INFO 2024-04-01 12:13:18,753 basehttp 16604 16148 "GET /myapp3/post/50/ HTTP/1.1" 200 724
+INFO 2024-04-01 12:13:20,740 basehttp 16604 16148 "GET /myapp3/post/49/ HTTP/1.1" 200 662
+INFO 2024-04-01 12:13:22,501 basehttp 16604 16148 "GET /myapp3/post/47/ HTTP/1.1" 200 705
