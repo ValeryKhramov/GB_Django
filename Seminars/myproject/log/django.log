@@ -341,3 +341,369 @@ INFO 2024-03-28 00:19:33,064 basehttp 17480 17396 "GET / HTTP/1.1" 200 7
 WARNING 2024-03-28 00:19:36,042 log 17480 17396 Not Found: /about/
 WARNING 2024-03-28 00:19:36,043 basehttp 17480 17396 "GET /about/ HTTP/1.1" 404 2541
 INFO 2024-03-28 00:19:37,496 basehttp 17480 17396 "GET /add_author/ HTTP/1.1" 200 49
+INFO 2024-04-01 13:23:23,563 autoreload 6660 4796 Watching for file changes with StatReloader
+INFO 2024-04-01 13:23:39,028 autoreload 6660 4796 D:\GeekBrains\Django\Seminars\myproject\myapp3\urls.py changed, reloading.
+INFO 2024-04-01 13:23:39,425 autoreload 15932 6616 Watching for file changes with StatReloader
+WARNING 2024-04-01 13:23:42,979 log 15932 2524 Not Found: /
+WARNING 2024-04-01 13:23:42,979 basehttp 15932 2524 "GET / HTTP/1.1" 404 2384
+WARNING 2024-04-01 13:23:48,386 log 15932 2524 Not Found: /myapp3
+WARNING 2024-04-01 13:23:48,386 basehttp 15932 2524 "GET /myapp3 HTTP/1.1" 404 2420
+WARNING 2024-04-01 13:23:51,418 log 15932 2524 Not Found: /myapp3/index
+WARNING 2024-04-01 13:23:51,418 basehttp 15932 2524 "GET /myapp3/index HTTP/1.1" 404 2715
+INFO 2024-04-01 13:24:10,161 basehttp 15932 2524 "GET /myapp3/index/index HTTP/1.1" 301 0
+ERROR 2024-04-01 13:24:10,264 log 15932 9524 Internal Server Error: /myapp3/index/index/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py", line 6, in index
+    return render('myapp3/index.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 17, in get_template
+    for origin in self.get_template_sources(template_name):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 70, in get_template_sources
+    yield from loader.get_template_sources(template_name)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\filesystem.py", line 35, in get_template_sources
+    name = safe_join(template_dir, template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\utils\_os.py", line 17, in safe_join
+    final_path = abspath(join(base, *paths))
+                         ^^^^^^^^^^^^^^^^^^
+  File "<frozen ntpath>", line 147, in join
+  File "<frozen genericpath>", line 152, in _check_arg_types
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'dict'
+ERROR 2024-04-01 13:24:10,268 basehttp 15932 9524 "GET /myapp3/index/index/ HTTP/1.1" 500 119907
+INFO 2024-04-01 13:25:02,303 autoreload 15932 6616 D:\GeekBrains\Django\Seminars\myproject\myapp3\urls.py changed, reloading.
+INFO 2024-04-01 13:25:02,716 autoreload 5588 17336 Watching for file changes with StatReloader
+WARNING 2024-04-01 13:25:03,963 log 5588 18144 Not Found: /
+WARNING 2024-04-01 13:25:03,964 basehttp 5588 18144 "GET / HTTP/1.1" 404 2384
+WARNING 2024-04-01 13:25:11,875 log 5588 18144 Not Found: /index/
+WARNING 2024-04-01 13:25:11,875 basehttp 5588 18144 "GET /index/ HTTP/1.1" 404 2420
+WARNING 2024-04-01 13:25:12,911 log 5588 18144 Not Found: /index/
+WARNING 2024-04-01 13:25:12,911 basehttp 5588 18144 "GET /index/ HTTP/1.1" 404 2420
+WARNING 2024-04-01 13:25:24,657 log 5588 18144 Not Found: /myapp3
+WARNING 2024-04-01 13:25:24,658 basehttp 5588 18144 "GET /myapp3 HTTP/1.1" 404 2420
+INFO 2024-04-01 13:25:26,546 basehttp 5588 18144 "GET /myapp3/index HTTP/1.1" 301 0
+ERROR 2024-04-01 13:25:26,577 log 5588 1768 Internal Server Error: /myapp3/index/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py", line 6, in index
+    return render('myapp3/index.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 17, in get_template
+    for origin in self.get_template_sources(template_name):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 70, in get_template_sources
+    yield from loader.get_template_sources(template_name)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\filesystem.py", line 35, in get_template_sources
+    name = safe_join(template_dir, template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\utils\_os.py", line 17, in safe_join
+    final_path = abspath(join(base, *paths))
+                         ^^^^^^^^^^^^^^^^^^
+  File "<frozen ntpath>", line 147, in join
+  File "<frozen genericpath>", line 152, in _check_arg_types
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'dict'
+ERROR 2024-04-01 13:25:26,580 basehttp 5588 1768 "GET /myapp3/index/ HTTP/1.1" 500 120108
+INFO 2024-04-01 13:26:13,304 autoreload 5588 17336 D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py changed, reloading.
+INFO 2024-04-01 13:26:13,716 autoreload 11744 4836 Watching for file changes with StatReloader
+INFO 2024-04-01 13:26:14,735 basehttp 11744 1712 "GET /myapp3/index/ HTTP/1.1" 200 1266
+INFO 2024-04-01 13:28:43,356 autoreload 11744 4836 D:\GeekBrains\Django\Seminars\myproject\myapp3\urls.py changed, reloading.
+INFO 2024-04-01 13:28:43,773 autoreload 6692 4012 Watching for file changes with StatReloader
+WARNING 2024-04-01 13:28:44,751 log 6692 16780 Not Found: /
+WARNING 2024-04-01 13:28:44,751 basehttp 6692 16780 "GET / HTTP/1.1" 404 2384
+INFO 2024-04-01 13:28:49,209 basehttp 6692 16780 "GET /myapp3 HTTP/1.1" 301 0
+INFO 2024-04-01 13:28:49,214 basehttp 6692 4648 "GET /myapp3/ HTTP/1.1" 200 1075
+INFO 2024-04-01 13:29:11,871 basehttp 6692 4648 "GET /myapp3/ HTTP/1.1" 200 1075
+INFO 2024-04-01 13:29:12,562 autoreload 6692 4012 D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py changed, reloading.
+INFO 2024-04-01 13:29:12,983 autoreload 3708 16740 Watching for file changes with StatReloader
+INFO 2024-04-01 13:29:13,129 basehttp 3708 17252 "GET /myapp3/ HTTP/1.1" 200 859
+INFO 2024-04-01 13:29:14,717 basehttp 3708 17252 "GET /myapp3/index/ HTTP/1.1" 200 1270
+INFO 2024-04-01 13:29:16,665 basehttp 3708 17252 "GET /myapp3/about HTTP/1.1" 301 0
+INFO 2024-04-01 13:29:16,668 basehttp 3708 15204 "GET /myapp3/about/ HTTP/1.1" 200 1074
+INFO 2024-04-01 13:29:18,168 basehttp 3708 15204 "GET /myapp3/index/ HTTP/1.1" 200 1270
+INFO 2024-04-01 13:29:39,707 basehttp 3708 15204 "GET /myapp3/ HTTP/1.1" 200 859
+INFO 2024-04-01 13:29:40,663 autoreload 3708 16740 D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py changed, reloading.
+INFO 2024-04-01 13:29:41,087 autoreload 11456 9296 Watching for file changes with StatReloader
+INFO 2024-04-01 13:29:41,291 basehttp 11456 10864 "GET /myapp3/ HTTP/1.1" 200 859
+INFO 2024-04-01 13:29:42,738 basehttp 11456 10864 "GET /myapp3/index/ HTTP/1.1" 200 1261
+INFO 2024-04-01 13:29:46,345 basehttp 11456 10864 "GET /myapp3/about/ HTTP/1.1" 200 1074
+INFO 2024-04-01 13:29:47,664 basehttp 11456 10864 "GET /myapp3/index/ HTTP/1.1" 200 1261
+INFO 2024-04-01 13:29:49,255 basehttp 11456 10864 "GET /myapp3/about/ HTTP/1.1" 200 1074
+WARNING 2024-04-01 13:40:17,996 log 11456 7004 Not Found: /
+WARNING 2024-04-01 13:40:17,996 basehttp 11456 7004 "GET / HTTP/1.1" 404 2384
+ERROR 2024-04-01 13:40:24,135 log 11456 7004 Internal Server Error: /myapp3/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'end'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py", line 16, in main
+    return render(request, 'myapp3/main.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 9: 'end', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-04-01 13:40:24,139 basehttp 11456 7004 "GET /myapp3/ HTTP/1.1" 500 158859
+INFO 2024-04-01 13:43:37,180 basehttp 11456 7004 "GET /myapp3/ HTTP/1.1" 200 865
+INFO 2024-04-01 13:43:39,675 basehttp 11456 7004 "GET /myapp3/index/ HTTP/1.1" 200 1262
+INFO 2024-04-01 13:43:41,797 basehttp 11456 7004 "GET /myapp3/about/ HTTP/1.1" 200 1071
+INFO 2024-04-01 14:51:58,851 basehttp 11456 11900 "GET /myapp3/index/ HTTP/1.1" 200 1262
+INFO 2024-04-01 14:52:01,842 basehttp 11456 11900 "GET /myapp3/about/ HTTP/1.1" 200 1071
+INFO 2024-04-01 14:52:04,153 basehttp 11456 11900 "GET /myapp3/index/ HTTP/1.1" 200 1262
+INFO 2024-04-01 15:01:03,159 autoreload 11456 9296 D:\GeekBrains\Django\Seminars\myproject\myapp3\models.py changed, reloading.
+INFO 2024-04-01 15:01:03,583 autoreload 14900 4484 Watching for file changes with StatReloader
+INFO 2024-04-01 15:07:07,209 autoreload 14900 4484 D:\GeekBrains\Django\Seminars\myproject\myapp3\models.py changed, reloading.
+INFO 2024-04-01 15:07:07,699 autoreload 6188 2004 Watching for file changes with StatReloader
+INFO 2024-04-01 15:45:09,600 autoreload 11576 7728 Watching for file changes with StatReloader
+WARNING 2024-04-01 15:45:10,880 log 11576 1248 Not Found: /
+WARNING 2024-04-01 15:45:10,881 basehttp 11576 1248 "GET / HTTP/1.1" 404 2384
+WARNING 2024-04-01 15:45:15,827 log 11576 1248 Not Found: /myapp3/
+WARNING 2024-04-01 15:45:15,828 basehttp 11576 1248 "GET /myapp3/ HTTP/1.1" 404 3024
+INFO 2024-04-01 15:45:25,937 basehttp 11576 1248 "GET /myapp3/cub/10 HTTP/1.1" 301 0
+INFO 2024-04-01 15:45:25,946 basehttp 11576 10212 "GET /myapp3/cub/10/ HTTP/1.1" 200 1234
+WARNING 2024-04-01 15:48:38,591 log 11576 10212 Not Found: /
+WARNING 2024-04-01 15:48:38,591 basehttp 11576 10212 "GET / HTTP/1.1" 404 2384
+WARNING 2024-04-01 15:48:42,296 log 11576 10212 Not Found: /myapp3/
+WARNING 2024-04-01 15:48:42,296 basehttp 11576 10212 "GET /myapp3/ HTTP/1.1" 404 3024
+WARNING 2024-04-01 15:48:43,490 log 11576 10212 Not Found: /myapp3/
+WARNING 2024-04-01 15:48:43,491 basehttp 11576 10212 "GET /myapp3/ HTTP/1.1" 404 3024
+WARNING 2024-04-01 15:48:51,862 log 11576 10212 Not Found: /
+WARNING 2024-04-01 15:48:51,862 basehttp 11576 10212 "GET / HTTP/1.1" 404 2384
+WARNING 2024-04-01 15:48:54,848 log 11576 10212 Not Found: /coin_values/
+WARNING 2024-04-01 15:48:54,848 basehttp 11576 10212 "GET /coin_values/ HTTP/1.1" 404 2438
+WARNING 2024-04-01 15:48:55,879 log 11576 10212 Not Found: /cub
+WARNING 2024-04-01 15:48:55,879 basehttp 11576 10212 "GET /cub HTTP/1.1" 404 2411
+WARNING 2024-04-01 15:48:57,895 log 11576 10212 Not Found: /cub/10
+WARNING 2024-04-01 15:48:57,895 basehttp 11576 10212 "GET /cub/10 HTTP/1.1" 404 2420
+WARNING 2024-04-01 15:49:08,787 log 11576 10212 Not Found: /myapp/cub/10
+WARNING 2024-04-01 15:49:08,787 basehttp 11576 10212 "GET /myapp/cub/10 HTTP/1.1" 404 2438
+INFO 2024-04-01 15:49:27,667 basehttp 11576 10212 "GET /myapp3/cub/10/ HTTP/1.1" 200 1322
+INFO 2024-04-01 15:52:53,427 autoreload 11576 7728 D:\GeekBrains\Django\Seminars\myproject\myapp3\urls.py changed, reloading.
+INFO 2024-04-01 15:52:53,958 autoreload 9096 7024 Watching for file changes with StatReloader
+WARNING 2024-04-01 15:52:55,181 log 9096 3592 Not Found: /
+WARNING 2024-04-01 15:52:55,182 basehttp 9096 3592 "GET / HTTP/1.1" 404 2384
+WARNING 2024-04-01 15:52:58,341 log 9096 3592 Not Found: /myapp3/
+WARNING 2024-04-01 15:52:58,341 basehttp 9096 3592 "GET /myapp3/ HTTP/1.1" 404 3410
+INFO 2024-04-01 15:53:01,865 basehttp 9096 3592 "GET /myapp3/cub/10/ HTTP/1.1" 200 892
+INFO 2024-04-01 15:53:52,617 basehttp 9096 3592 "GET /myapp3/numbers/10 HTTP/1.1" 301 0
+INFO 2024-04-01 15:53:52,620 basehttp 9096 18096 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1327
+INFO 2024-04-01 15:54:01,008 basehttp 9096 18096 "GET /myapp3/coin/10 HTTP/1.1" 301 0
+ERROR 2024-04-01 15:54:01,035 log 9096 10444 Internal Server Error: /myapp3/coin/10/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py", line 48, in coin
+    my_dict[choice['Îð¸ë', 'Ðåøêà']] = datetime.datetime.now().time()
+            ~~~~~~^^^^^^^^^^^^^^^^^
+TypeError: 'method' object is not subscriptable
+ERROR 2024-04-01 15:54:01,037 basehttp 9096 10444 "GET /myapp3/coin/10/ HTTP/1.1" 500 65446
+INFO 2024-04-01 15:54:47,252 autoreload 9096 7024 D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py changed, reloading.
+INFO 2024-04-01 15:54:47,698 autoreload 3228 10160 Watching for file changes with StatReloader
+ERROR 2024-04-01 15:54:49,338 log 3228 2004 Internal Server Error: /myapp3/coin/10/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py", line 48, in coin
+    my_dict[choice('Îð¸ë', 'Ðåøêà')] = datetime.datetime.now().time()
+            ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Random.choice() takes 2 positional arguments but 3 were given
+ERROR 2024-04-01 15:54:49,339 basehttp 3228 2004 "GET /myapp3/coin/10/ HTTP/1.1" 500 65643
+INFO 2024-04-01 15:55:53,128 autoreload 3228 10160 D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py changed, reloading.
+INFO 2024-04-01 15:55:53,605 autoreload 8148 13576 Watching for file changes with StatReloader
+INFO 2024-04-01 15:56:03,673 basehttp 8148 16740 "GET /myapp3/coin/10/ HTTP/1.1" 200 850
+INFO 2024-04-01 15:56:11,403 basehttp 8148 16740 "GET /myapp3/coin/100/ HTTP/1.1" 200 850
+INFO 2024-04-01 16:06:09,246 autoreload 8148 13576 D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py changed, reloading.
+INFO 2024-04-01 16:06:09,693 autoreload 15368 17044 Watching for file changes with StatReloader
+INFO 2024-04-01 16:06:11,971 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 4720
+INFO 2024-04-01 16:06:55,776 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 4728
+INFO 2024-04-01 16:07:01,800 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 4708
+INFO 2024-04-01 16:07:02,818 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 4710
+INFO 2024-04-01 16:07:03,484 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 4692
+INFO 2024-04-01 16:07:04,084 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 4704
+INFO 2024-04-01 16:07:04,670 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 4706
+INFO 2024-04-01 16:07:05,202 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 4704
+INFO 2024-04-01 16:07:05,629 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 4722
+INFO 2024-04-01 16:07:07,024 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 4732
+INFO 2024-04-01 16:07:25,991 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 4718
+INFO 2024-04-01 16:07:26,721 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5614
+INFO 2024-04-01 16:07:27,402 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5614
+INFO 2024-04-01 16:07:27,904 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5612
+INFO 2024-04-01 16:07:28,219 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5626
+INFO 2024-04-01 16:07:28,408 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5618
+INFO 2024-04-01 16:07:28,565 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5622
+INFO 2024-04-01 16:07:29,037 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5610
+INFO 2024-04-01 16:07:29,428 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5622
+INFO 2024-04-01 16:07:29,794 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5618
+INFO 2024-04-01 16:07:30,124 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5620
+INFO 2024-04-01 16:07:30,311 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5612
+INFO 2024-04-01 16:07:30,477 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5606
+INFO 2024-04-01 16:07:30,634 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5600
+INFO 2024-04-01 16:07:30,792 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5620
+INFO 2024-04-01 16:07:30,941 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5616
+INFO 2024-04-01 16:07:31,100 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5614
+INFO 2024-04-01 16:07:31,258 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5602
+INFO 2024-04-01 16:07:31,415 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5636
+INFO 2024-04-01 16:07:31,565 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5620
+INFO 2024-04-01 16:07:31,715 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5608
+INFO 2024-04-01 16:07:45,957 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5610
+INFO 2024-04-01 16:07:46,618 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5606
+INFO 2024-04-01 16:08:01,527 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 5614
+INFO 2024-04-01 16:08:02,120 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 7138
+INFO 2024-04-01 16:08:02,532 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 7126
+INFO 2024-04-01 16:08:02,704 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 7122
+INFO 2024-04-01 16:08:02,855 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 7104
+INFO 2024-04-01 16:08:03,012 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 7116
+INFO 2024-04-01 16:08:03,177 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 7120
+INFO 2024-04-01 16:08:03,382 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 7118
+INFO 2024-04-01 16:08:03,530 basehttp 15368 17864 "GET /myapp3/coin/100/ HTTP/1.1" 200 7136
+INFO 2024-04-01 16:09:44,423 autoreload 15368 17044 D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py changed, reloading.
+INFO 2024-04-01 16:09:44,864 autoreload 5820 2436 Watching for file changes with StatReloader
+INFO 2024-04-01 16:09:51,285 basehttp 5820 8900 "GET /myapp3/cub/10/ HTTP/1.1" 200 1125
+INFO 2024-04-01 16:10:06,629 basehttp 5820 8900 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1147
+INFO 2024-04-01 16:11:15,936 basehttp 5820 8900 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1219
+INFO 2024-04-01 16:11:16,633 basehttp 5820 8900 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1219
+INFO 2024-04-01 16:11:17,570 basehttp 5820 8900 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1220
+INFO 2024-04-01 16:11:31,052 autoreload 17900 4168 Watching for file changes with StatReloader
+INFO 2024-04-01 16:11:33,433 basehttp 17900 17284 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1218
+INFO 2024-04-01 16:11:34,139 basehttp 17900 17284 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1218
+INFO 2024-04-01 16:12:00,357 autoreload 16852 8880 Watching for file changes with StatReloader
+INFO 2024-04-01 16:12:03,472 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1261
+INFO 2024-04-01 16:12:04,399 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1259
+INFO 2024-04-01 16:12:05,599 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1261
+INFO 2024-04-01 16:12:06,027 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1260
+INFO 2024-04-01 16:12:06,192 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1261
+INFO 2024-04-01 16:12:06,364 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1260
+INFO 2024-04-01 16:12:06,537 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1260
+INFO 2024-04-01 16:12:06,875 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1259
+INFO 2024-04-01 16:12:07,204 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1261
+INFO 2024-04-01 16:12:07,601 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1259
+INFO 2024-04-01 16:12:07,978 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1260
+INFO 2024-04-01 16:12:08,382 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1258
+INFO 2024-04-01 16:12:09,072 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1261
+INFO 2024-04-01 16:12:09,319 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1258
+INFO 2024-04-01 16:12:09,491 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1260
+INFO 2024-04-01 16:12:09,642 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1260
+INFO 2024-04-01 16:12:09,791 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1258
+INFO 2024-04-01 16:12:10,055 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1261
+INFO 2024-04-01 16:12:10,264 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1260
+INFO 2024-04-01 16:12:10,430 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1260
+INFO 2024-04-01 16:12:10,564 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1260
+INFO 2024-04-01 16:12:10,714 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1259
+INFO 2024-04-01 16:12:10,864 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1259
+INFO 2024-04-01 16:12:11,021 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1261
