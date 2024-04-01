@@ -35,3 +35,10 @@ Traceback (most recent call last):
              ~~^~~
 ZeroDivisionError: division by zero
 INFO 2024-03-22 23:10:02,025 basehttp 1468 15644 "GET /about/ HTTP/1.1" 200 27
+INFO 2024-03-26 21:43:35,506 autoreload 9408 13000 Watching for file changes with StatReloader
+INFO 2024-03-26 21:46:58,843 autoreload 15120 13196 Watching for file changes with StatReloader
+INFO 2024-03-26 21:47:00,671 views 15120 15196 Index page accessed
+INFO 2024-03-26 21:47:00,671 basehttp 15120 15196 "GET / HTTP/1.1" 200 13
+WARNING 2024-03-26 21:47:00,907 log 15120 15196 Not Found: /favicon.ico
+WARNING 2024-03-26 21:47:00,907 basehttp 15120 15196 "GET /favicon.ico HTTP/1.1" 404 2440
+INFO 2024-03-26 21:50:56,572 autoreload 7304 2648 Watching for file changes with StatReloader
