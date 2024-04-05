@@ -707,3 +707,214 @@ INFO 2024-04-01 16:12:10,564 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/
 INFO 2024-04-01 16:12:10,714 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1259
 INFO 2024-04-01 16:12:10,864 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1259
 INFO 2024-04-01 16:12:11,021 basehttp 16852 16108 "GET /myapp3/numbers/10/ HTTP/1.1" 200 1261
+INFO 2024-04-05 14:06:02,422 autoreload 1932 8440 Watching for file changes with StatReloader
+WARNING 2024-04-05 14:06:13,325 log 1932 1972 Not Found: /
+WARNING 2024-04-05 14:06:13,326 basehttp 1932 1972 "GET / HTTP/1.1" 404 2384
+WARNING 2024-04-05 14:06:19,982 log 1932 1972 Not Found: /game_choice
+WARNING 2024-04-05 14:06:19,982 basehttp 1932 1972 "GET /game_choice HTTP/1.1" 404 2435
+INFO 2024-04-05 14:06:34,832 basehttp 1932 1972 "GET /myapp3/game_choice HTTP/1.1" 301 0
+INFO 2024-04-05 14:06:34,844 basehttp 1932 19108 "GET /myapp3/game_choice/ HTTP/1.1" 200 1355
+INFO 2024-04-05 14:06:45,156 views 1932 19108 Получили: name='coin', count=10
+ERROR 2024-04-05 14:06:45,177 log 1932 19108 Internal Server Error: /myapp3/game_choice/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py", line 66, in game_choice
+    coin(count)
+TypeError: coin() missing 1 required positional argument: 'count'
+ERROR 2024-04-05 14:06:45,178 basehttp 1932 19108 "POST /myapp3/game_choice/ HTTP/1.1" 500 66950
+INFO 2024-04-05 14:08:16,055 autoreload 1932 8440 D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py changed, reloading.
+INFO 2024-04-05 14:08:16,514 autoreload 9708 4120 Watching for file changes with StatReloader
+INFO 2024-04-05 14:08:18,930 views 9708 4476 Получили: name='coin', count=10
+INFO 2024-04-05 14:08:18,946 basehttp 9708 4476 "POST /myapp3/game_choice/ HTTP/1.1" 200 1375
+INFO 2024-04-05 14:08:20,961 views 9708 4476 Получили: name='coin', count=10
+INFO 2024-04-05 14:08:20,963 basehttp 9708 4476 "POST /myapp3/game_choice/ HTTP/1.1" 200 1375
+INFO 2024-04-05 14:08:23,921 views 9708 4476 Получили: name='coin', count=10
+INFO 2024-04-05 14:08:23,923 basehttp 9708 4476 "POST /myapp3/game_choice/ HTTP/1.1" 200 1375
+INFO 2024-04-05 14:18:13,920 autoreload 9708 4120 D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py changed, reloading.
+INFO 2024-04-05 14:18:14,475 autoreload 7068 13616 Watching for file changes with StatReloader
+INFO 2024-04-05 14:18:17,445 views 7068 11660 Получили: name='coin', count=10
+ERROR 2024-04-05 14:18:17,478 log 7068 11660 Internal Server Error: /myapp3/game_choice/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view myapp3.views.game_choice didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-04-05 14:18:17,478 basehttp 7068 11660 "POST /myapp3/game_choice/ HTTP/1.1" 500 67346
+INFO 2024-04-05 14:18:26,027 autoreload 7068 13616 D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py changed, reloading.
+INFO 2024-04-05 14:18:26,608 autoreload 6308 5492 Watching for file changes with StatReloader
+INFO 2024-04-05 14:18:28,126 views 6308 3204 Получили: name='coin', count=10
+INFO 2024-04-05 14:18:28,138 basehttp 6308 3204 "POST /myapp3/game_choice/ HTTP/1.1" 200 1375
+INFO 2024-04-05 14:18:29,104 views 6308 3204 Получили: name='coin', count=10
+INFO 2024-04-05 14:18:29,106 basehttp 6308 3204 "POST /myapp3/game_choice/ HTTP/1.1" 200 1375
+INFO 2024-04-05 14:18:29,638 views 6308 3204 Получили: name='coin', count=10
+INFO 2024-04-05 14:18:29,639 basehttp 6308 3204 "POST /myapp3/game_choice/ HTTP/1.1" 200 1375
+INFO 2024-04-05 14:18:30,213 views 6308 3204 Получили: name='coin', count=10
+INFO 2024-04-05 14:18:30,215 basehttp 6308 3204 "POST /myapp3/game_choice/ HTTP/1.1" 200 1375
+INFO 2024-04-05 14:18:31,068 views 6308 3204 Получили: name='coin', count=10
+INFO 2024-04-05 14:18:31,070 basehttp 6308 3204 "POST /myapp3/game_choice/ HTTP/1.1" 200 1375
+INFO 2024-04-05 14:18:31,654 views 6308 3204 Получили: name='coin', count=10
+INFO 2024-04-05 14:18:31,656 basehttp 6308 3204 "POST /myapp3/game_choice/ HTTP/1.1" 200 1375
+INFO 2024-04-05 14:18:32,482 views 6308 3204 Получили: name='coin', count=10
+INFO 2024-04-05 14:18:32,484 basehttp 6308 3204 "POST /myapp3/game_choice/ HTTP/1.1" 200 1375
+INFO 2024-04-05 14:19:51,275 autoreload 6308 5492 D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py changed, reloading.
+INFO 2024-04-05 14:19:51,736 autoreload 15876 19324 Watching for file changes with StatReloader
+INFO 2024-04-05 14:19:54,130 views 15876 18084 Получили: name='coin', count=10
+INFO 2024-04-05 14:19:54,142 basehttp 15876 18084 "POST /myapp3/game_choice/ HTTP/1.1" 200 1359
+INFO 2024-04-05 14:19:55,551 views 15876 18084 Получили: name='coin', count=10
+INFO 2024-04-05 14:19:55,553 basehttp 15876 18084 "POST /myapp3/game_choice/ HTTP/1.1" 200 1359
+INFO 2024-04-05 14:23:18,160 autoreload 15876 19324 D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py changed, reloading.
+INFO 2024-04-05 14:23:18,619 autoreload 10388 16656 Watching for file changes with StatReloader
+INFO 2024-04-05 14:23:19,348 views 10388 19832 Получили: name='coin', count=10
+INFO 2024-04-05 14:23:19,353 basehttp 10388 19832 "POST /myapp3/game_choice/ HTTP/1.1" 200 1202
+INFO 2024-04-05 14:23:38,762 views 10388 19832 Получили: name='cub', count=10
+INFO 2024-04-05 14:23:38,765 basehttp 10388 19832 "POST /myapp3/game_choice/ HTTP/1.1" 200 1125
+INFO 2024-04-05 14:23:45,234 views 10388 19832 Получили: name='numbers', count=10
+INFO 2024-04-05 14:23:45,236 basehttp 10388 19832 "POST /myapp3/game_choice/ HTTP/1.1" 200 1149
+INFO 2024-04-05 14:24:21,888 views 10388 19832 Получили: name='numbers', count=10
+INFO 2024-04-05 14:24:21,890 basehttp 10388 19832 "POST /myapp3/game_choice/ HTTP/1.1" 200 1177
+INFO 2024-04-05 14:24:31,857 views 10388 19832 Получили: name='numbers', count=10
+INFO 2024-04-05 14:24:31,859 basehttp 10388 19832 "POST /myapp3/game_choice/ HTTP/1.1" 200 1176
+INFO 2024-04-05 14:25:01,001 views 10388 19832 Получили: name='numbers', count=10
+INFO 2024-04-05 14:25:01,003 basehttp 10388 19832 "POST /myapp3/game_choice/ HTTP/1.1" 200 1420
+INFO 2024-04-05 14:26:10,138 views 10388 19832 Получили: name='numbers', count=10
+INFO 2024-04-05 14:26:10,140 basehttp 10388 19832 "POST /myapp3/game_choice/ HTTP/1.1" 200 1176
+INFO 2024-04-05 14:27:42,886 views 10388 19832 Получили: name='numbers', count=10
+INFO 2024-04-05 14:27:42,887 basehttp 10388 19832 "POST /myapp3/game_choice/ HTTP/1.1" 200 1193
+INFO 2024-04-05 14:28:34,290 views 10388 19832 Получили: name='numbers', count=10
+INFO 2024-04-05 14:28:34,291 basehttp 10388 19832 "POST /myapp3/game_choice/ HTTP/1.1" 200 1264
+INFO 2024-04-05 14:28:38,969 views 10388 19832 Получили: name='cub', count=10
+INFO 2024-04-05 14:28:38,970 basehttp 10388 19832 "POST /myapp3/game_choice/ HTTP/1.1" 200 1241
+INFO 2024-04-05 14:32:39,671 autoreload 10388 16656 D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py changed, reloading.
+INFO 2024-04-05 14:32:40,128 autoreload 3384 16968 Watching for file changes with StatReloader
+INFO 2024-04-05 15:03:50,918 autoreload 10364 19288 Watching for file changes with StatReloader
+WARNING 2024-04-05 15:03:51,991 log 10364 16140 Not Found: /
+WARNING 2024-04-05 15:03:51,992 basehttp 10364 16140 "GET / HTTP/1.1" 404 2384
+WARNING 2024-04-05 15:03:55,983 log 10364 16140 Not Found: /myapp3/
+WARNING 2024-04-05 15:03:55,984 basehttp 10364 16140 "GET /myapp3/ HTTP/1.1" 404 3780
+INFO 2024-04-05 15:04:03,682 basehttp 10364 16140 "GET /myapp3/add_author HTTP/1.1" 301 0
+INFO 2024-04-05 15:04:03,696 basehttp 10364 296 "GET /myapp3/add_author/ HTTP/1.1" 200 1778
+INFO 2024-04-05 15:09:10,320 autoreload 10364 19288 D:\GeekBrains\Django\Seminars\myproject\myapp3\forms.py changed, reloading.
+INFO 2024-04-05 15:09:10,830 autoreload 11752 13076 Watching for file changes with StatReloader
+ERROR 2024-04-05 15:09:12,289 log 11752 20092 Internal Server Error: /myapp3/add_author/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py", line 94, in add_author
+    form = AuthorForm()
+           ^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\models.py", line 360, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+ERROR 2024-04-05 15:09:12,290 basehttp 11752 20092 "GET /myapp3/add_author/ HTTP/1.1" 500 71022
+INFO 2024-04-05 15:10:08,090 autoreload 11752 13076 D:\GeekBrains\Django\Seminars\myproject\myapp3\forms.py changed, reloading.
+INFO 2024-04-05 15:10:08,533 autoreload 18640 10392 Watching for file changes with StatReloader
+ERROR 2024-04-05 15:10:09,106 log 18640 20248 Internal Server Error: /myapp3/add_author/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py", line 94, in add_author
+    form = AuthorForm()
+           ^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\models.py", line 360, in __init__
+    raise ValueError("ModelForm has no model class specified.")
+ValueError: ModelForm has no model class specified.
+ERROR 2024-04-05 15:10:09,108 basehttp 18640 20248 "GET /myapp3/add_author/ HTTP/1.1" 500 71022
+INFO 2024-04-05 15:10:26,041 autoreload 18640 10392 D:\GeekBrains\Django\Seminars\myproject\myapp3\forms.py changed, reloading.
+INFO 2024-04-05 15:10:26,464 autoreload 14064 3016 Watching for file changes with StatReloader
+INFO 2024-04-05 15:10:26,790 basehttp 14064 18508 "GET /myapp3/add_author/ HTTP/1.1" 200 1651
+INFO 2024-04-05 15:10:36,872 autoreload 14064 3016 D:\GeekBrains\Django\Seminars\myproject\myapp3\forms.py changed, reloading.
+INFO 2024-04-05 15:10:37,295 autoreload 17136 8536 Watching for file changes with StatReloader
+INFO 2024-04-05 15:10:37,563 basehttp 17136 19072 "GET /myapp3/add_author/ HTTP/1.1" 200 1651
+INFO 2024-04-05 15:10:39,045 basehttp 17136 19072 "GET /myapp3/add_author/ HTTP/1.1" 200 1651
+INFO 2024-04-05 15:10:39,659 basehttp 17136 19072 "GET /myapp3/add_author/ HTTP/1.1" 200 1651
+INFO 2024-04-05 15:10:39,817 basehttp 17136 19072 "GET /myapp3/add_author/ HTTP/1.1" 200 1651
+INFO 2024-04-05 15:10:39,996 basehttp 17136 19072 "GET /myapp3/add_author/ HTTP/1.1" 200 1651
+INFO 2024-04-05 15:12:27,260 autoreload 17136 8536 D:\GeekBrains\Django\Seminars\myproject\myapp3\forms.py changed, reloading.
+INFO 2024-04-05 15:12:27,681 autoreload 1340 17736 Watching for file changes with StatReloader
+INFO 2024-04-05 15:12:27,951 basehttp 1340 4252 "GET /myapp3/add_author/ HTTP/1.1" 200 1839
+INFO 2024-04-05 15:13:18,220 views 1340 4252 Получили: name='Иван', second_name='Иванов', email='mail@mail.ru', biography='Родился. Стал автором. Умер.', birthday=datetime.date(2000, 4, 5)
+ERROR 2024-04-05 15:13:18,315 log 1340 4252 Internal Server Error: /myapp3/add_author/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table myapp3_author has no column named second_name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py", line 91, in add_author
+    author.save()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table myapp3_author has no column named second_name
+ERROR 2024-04-05 15:13:18,320 basehttp 1340 4252 "POST /myapp3/add_author/ HTTP/1.1" 500 150778
+INFO 2024-04-05 15:17:35,373 autoreload 13148 5004 Watching for file changes with StatReloader
+INFO 2024-04-05 15:17:39,405 views 13148 12756 Получили: name='Иван', second_name='Иванов', email='mail@mail.ru', biography='Родился. Стал автором. Умер.', birthday=datetime.date(2000, 4, 5)
+INFO 2024-04-05 15:17:39,419 basehttp 13148 12756 "POST /myapp3/add_author/ HTTP/1.1" 200 1945
+INFO 2024-04-05 15:17:43,394 views 13148 12756 Получили: name='Иван', second_name='Иванов', email='mail@mail.ru', biography='Родился. Стал автором. Умер.', birthday=datetime.date(2000, 4, 5)
+INFO 2024-04-05 15:17:43,400 basehttp 13148 12756 "POST /myapp3/add_author/ HTTP/1.1" 200 1945
+INFO 2024-04-05 15:26:14,650 autoreload 13148 5004 D:\GeekBrains\Django\Seminars\myproject\myapp3\views.py changed, reloading.
+INFO 2024-04-05 15:26:15,081 autoreload 7160 7352 Watching for file changes with StatReloader

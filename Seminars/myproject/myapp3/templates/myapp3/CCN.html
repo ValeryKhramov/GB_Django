@@ -3,9 +3,10 @@
 {% block title %}{{title}}{% endblock %}
 
 {% block content %}
-    <table>
+    <table style="margin-left: auto;margin-right: auto;" >
         {% for item in my_list %}
             <tr><td>{{ item }}</td></tr>
         {% endfor %}
     </table>
+    <button><a href="javascript:history.back()">Go Back</a></button>
 {% endblock %}
