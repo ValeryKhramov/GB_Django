@@ -12,3 +12,2200 @@ WARNING 2024-03-31 22:32:00,148 basehttp 11276 12340 "GET / HTTP/1.1" 404 2279
 WARNING 2024-03-31 22:32:10,509 log 11276 12340 Not Found: /heads
 WARNING 2024-03-31 22:32:10,510 basehttp 11276 12340 "GET /heads HTTP/1.1" 404 2312
 INFO 2024-03-31 22:32:14,547 basehttp 11276 12340 "GET /homework2app HTTP/1.1" 200 38
+INFO 2024-04-03 10:22:54,164 autoreload 10704 8812 Watching for file changes with StatReloader
+WARNING 2024-04-03 10:23:00,360 log 10704 3996 Not Found: /
+WARNING 2024-04-03 10:23:00,361 basehttp 10704 3996 "GET / HTTP/1.1" 404 2392
+WARNING 2024-04-03 10:23:00,374 log 10704 3996 Not Found: /
+WARNING 2024-04-03 10:23:00,376 basehttp 10704 3996 "GET / HTTP/1.1" 404 2392
+WARNING 2024-04-03 10:23:00,567 log 10704 3996 Not Found: /favicon.ico
+WARNING 2024-04-03 10:23:00,568 basehttp 10704 3996 "GET /favicon.ico HTTP/1.1" 404 2443
+WARNING 2024-04-03 10:23:00,580 log 10704 3996 Not Found: /favicon.ico
+WARNING 2024-04-03 10:23:00,581 basehttp 10704 3996 "GET /favicon.ico HTTP/1.1" 404 2443
+WARNING 2024-04-03 10:23:02,147 log 10704 6316 Not Found: /favicon.ico
+WARNING 2024-04-03 10:23:02,148 basehttp 10704 6316 "GET /favicon.ico HTTP/1.1" 404 2443
+INFO 2024-04-03 10:23:16,638 basehttp 10704 15064 "GET /homework3app/ HTTP/1.1" 200 60
+INFO 2024-04-03 10:52:16,418 autoreload 8744 10704 Watching for file changes with StatReloader
+WARNING 2024-04-03 10:52:18,387 log 8744 11840 Not Found: /
+WARNING 2024-04-03 10:52:18,387 basehttp 8744 11840 "GET / HTTP/1.1" 404 2392
+INFO 2024-04-03 10:52:26,576 basehttp 8744 11840 "GET /homework3app/ HTTP/1.1" 200 68
+INFO 2024-04-03 10:59:51,983 autoreload 8792 2728 Watching for file changes with StatReloader
+WARNING 2024-04-03 10:59:53,815 log 8792 13064 Not Found: /
+WARNING 2024-04-03 10:59:53,815 basehttp 8792 13064 "GET / HTTP/1.1" 404 2392
+ERROR 2024-04-03 11:00:00,661 log 8792 13064 Internal Server Error: /homework3app/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'end'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 7, in index
+    return render(request, 'homework3app/base.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'end', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-04-03 11:00:00,661 basehttp 8792 13064 "GET /homework3app/ HTTP/1.1" 500 149130
+INFO 2024-04-03 11:00:47,943 autoreload 8792 2728 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 11:00:48,590 autoreload 4392 12072 Watching for file changes with StatReloader
+ERROR 2024-04-03 11:00:53,104 log 4392 8668 Internal Server Error: /homework3app/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'end'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 8, in index
+    return render(request, 'homework3app/base.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'end', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-04-03 11:00:53,104 basehttp 4392 8668 "GET /homework3app/ HTTP/1.1" 500 149838
+ERROR 2024-04-03 11:00:58,502 log 4392 8668 Internal Server Error: /homework3app/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'end'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 8, in index
+    return render(request, 'homework3app/base.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 5: 'end', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-04-03 11:00:58,502 basehttp 4392 8668 "GET /homework3app/ HTTP/1.1" 500 149838
+INFO 2024-04-03 11:01:18,001 basehttp 4392 8668 "GET /homework3app/ HTTP/1.1" 200 476
+INFO 2024-04-03 11:02:10,050 basehttp 4392 8668 "GET /homework3app/ HTTP/1.1" 200 458
+INFO 2024-04-03 11:02:30,394 basehttp 4392 8668 "GET /homework3app/ HTTP/1.1" 200 463
+INFO 2024-04-03 11:02:40,874 basehttp 4392 8668 "GET /homework3app/ HTTP/1.1" 200 465
+INFO 2024-04-03 11:03:39,352 basehttp 4392 8668 "GET /homework3app/ HTTP/1.1" 200 544
+INFO 2024-04-03 11:03:49,535 basehttp 4392 8668 "GET /homework3app/ HTTP/1.1" 200 544
+INFO 2024-04-03 11:04:05,917 basehttp 4392 8668 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 11:07:24,344 autoreload 4392 12072 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 11:07:25,026 autoreload 2176 8276 Watching for file changes with StatReloader
+INFO 2024-04-03 11:42:30,518 autoreload 2176 8276 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 11:42:31,203 autoreload 12660 5452 Watching for file changes with StatReloader
+INFO 2024-04-03 11:47:28,234 autoreload 12660 5452 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 11:47:29,051 autoreload 5396 3772 Watching for file changes with StatReloader
+INFO 2024-04-03 11:49:49,564 autoreload 5396 3772 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 11:49:50,267 autoreload 14128 15828 Watching for file changes with StatReloader
+INFO 2024-04-03 11:50:58,014 autoreload 14128 15828 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 11:50:58,617 autoreload 13524 16504 Watching for file changes with StatReloader
+INFO 2024-04-03 11:53:15,999 autoreload 13524 16504 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\urls.py changed, reloading.
+INFO 2024-04-03 11:53:16,817 autoreload 15452 16648 Watching for file changes with StatReloader
+WARNING 2024-04-03 12:09:00,345 log 15452 2172 Not Found: /
+WARNING 2024-04-03 12:09:00,350 basehttp 15452 2172 "GET / HTTP/1.1" 404 2392
+INFO 2024-04-03 12:09:01,194 autoreload 15452 16648 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 12:09:01,879 autoreload 14572 6908 Watching for file changes with StatReloader
+INFO 2024-04-03 12:09:30,850 autoreload 14572 6908 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\urls.py changed, reloading.
+INFO 2024-04-03 12:09:31,470 autoreload 7476 4616 Watching for file changes with StatReloader
+INFO 2024-04-03 12:09:36,439 basehttp 7476 4584 "GET /homework3app/ HTTP/1.1" 200 542
+ERROR 2024-04-03 12:09:46,576 log 7476 4584 Internal Server Error: /homework3app/fake_date/10
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ClientCRUD.fake_date() missing 1 required positional argument: 'request'
+ERROR 2024-04-03 12:09:46,576 basehttp 7476 4584 "GET /homework3app/fake_date/10 HTTP/1.1" 500 61953
+INFO 2024-04-03 12:12:05,676 autoreload 7476 4616 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\urls.py changed, reloading.
+INFO 2024-04-03 12:12:06,303 autoreload 2532 17244 Watching for file changes with StatReloader
+WARNING 2024-04-03 12:12:15,224 base 2532 12092 Method Not Allowed (GET): /homework3app/fake_date/10
+WARNING 2024-04-03 12:12:15,224 log 2532 12092 Method Not Allowed: /homework3app/fake_date/10
+WARNING 2024-04-03 12:12:15,224 basehttp 2532 12092 "GET /homework3app/fake_date/10 HTTP/1.1" 405 0
+INFO 2024-04-03 12:12:28,397 basehttp 2532 12092 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 12:15:14,157 autoreload 2532 17244 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 12:15:14,808 autoreload 13896 2040 Watching for file changes with StatReloader
+ERROR 2024-04-03 12:15:35,407 log 13896 2400 Internal Server Error: /homework3app/fake_date/10
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 14, in fake_date_client
+    client = Client(name=f'Client{i}', email=f'email{i}@gmail.com', number_phone={i}, adress=f'{i} street')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Client() got unexpected keyword arguments: 'adress'
+ERROR 2024-04-03 12:15:35,416 basehttp 13896 2400 "GET /homework3app/fake_date/10 HTTP/1.1" 500 72988
+INFO 2024-04-03 12:16:12,631 autoreload 13896 2040 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\urls.py changed, reloading.
+INFO 2024-04-03 12:16:13,416 autoreload 5780 12844 Watching for file changes with StatReloader
+ERROR 2024-04-03 12:16:20,734 log 5780 13820 Internal Server Error: /homework3app/fake_date_clients/10
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'set'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 15, in fake_date_client
+    client.save()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+                 ^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1686, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1013, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2124, in get_db_prep_value
+    value = super().get_db_prep_value(value, connection, prepared)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1006, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'number_phone' expected a number but got {0}.
+ERROR 2024-04-03 12:16:20,734 basehttp 5780 13820 "GET /homework3app/fake_date_clients/10 HTTP/1.1" 500 143350
+INFO 2024-04-03 12:16:38,453 autoreload 5780 12844 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 12:16:39,272 autoreload 6152 15676 Watching for file changes with StatReloader
+ERROR 2024-04-03 12:16:42,741 log 6152 8992 Internal Server Error: /homework3app/fake_date_clients/10
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'set'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 15, in fake_date_client
+    client.save()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    for sql, params in self.as_sql():
+                       ^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1745, in as_sql
+    value_rows = [
+                 ^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1746, in <listcomp>
+    [
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1747, in <listcomp>
+    self.prepare_value(field, self.pre_save_val(field, obj))
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1686, in prepare_value
+    return field.get_db_prep_save(value, connection=self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1013, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2124, in get_db_prep_value
+    value = super().get_db_prep_value(value, connection, prepared)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 1006, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'number_phone' expected a number but got {0}.
+ERROR 2024-04-03 12:16:42,751 basehttp 6152 8992 "GET /homework3app/fake_date_clients/10 HTTP/1.1" 500 143492
+INFO 2024-04-03 12:19:43,271 autoreload 15444 15208 Watching for file changes with StatReloader
+WARNING 2024-04-03 12:19:47,257 log 15444 3428 Not Found: /
+WARNING 2024-04-03 12:19:47,257 basehttp 15444 3428 "GET / HTTP/1.1" 404 2392
+INFO 2024-04-03 12:19:50,835 basehttp 15444 3428 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 12:19:51,994 basehttp 15444 3428 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 12:20:10,986 basehttp 15444 3428 "GET /homework3app/fake_date_clients/10 HTTP/1.1" 200 537
+INFO 2024-04-03 15:11:07,805 autoreload 13328 13952 Watching for file changes with StatReloader
+WARNING 2024-04-03 15:11:09,228 log 13328 16576 Not Found: /
+WARNING 2024-04-03 15:11:09,230 basehttp 13328 16576 "GET / HTTP/1.1" 404 2392
+INFO 2024-04-03 15:11:12,768 basehttp 13328 16576 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 15:11:15,029 basehttp 13328 16576 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 15:11:31,607 basehttp 13328 16576 "GET /homework3app/fake_date_clients/100 HTTP/1.1" 200 537
+WARNING 2024-04-03 15:13:57,878 log 13328 16576 Not Found: /
+WARNING 2024-04-03 15:13:57,878 basehttp 13328 16576 "GET / HTTP/1.1" 404 2392
+INFO 2024-04-03 15:14:00,790 basehttp 13328 16576 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 15:14:01,943 basehttp 13328 16576 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 15:14:08,026 basehttp 13328 16576 "GET /homework3app/get_clients HTTP/1.1" 200 17065
+INFO 2024-04-03 15:14:38,378 basehttp 13328 16576 "GET /homework3app/get_clients HTTP/1.1" 200 17065
+INFO 2024-04-03 15:20:48,920 autoreload 13328 13952 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 15:20:49,551 autoreload 4652 13452 Watching for file changes with StatReloader
+WARNING 2024-04-03 15:20:51,670 log 4652 17224 Not Found: /
+WARNING 2024-04-03 15:20:51,670 basehttp 4652 17224 "GET / HTTP/1.1" 404 2392
+INFO 2024-04-03 15:20:54,653 basehttp 4652 17224 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 15:20:55,708 basehttp 4652 17224 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 15:21:36,769 basehttp 4652 17224 "GET /homework3app/create_client/nameAdd/emailAdd/phoneNumberAdd/adressAdd/ HTTP/1.1" 200 468
+INFO 2024-04-03 15:21:44,415 basehttp 4652 17224 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 15:21:54,767 basehttp 4652 17224 "GET /homework3app/get_clients HTTP/1.1" 200 17217
+INFO 2024-04-03 15:26:05,502 autoreload 4652 13452 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 15:26:06,212 autoreload 14072 14404 Watching for file changes with StatReloader
+INFO 2024-04-03 15:27:10,360 basehttp 14072 12516 "GET /homework3app/delete_client/111 HTTP/1.1" 301 0
+ERROR 2024-04-03 15:27:10,421 log 14072 3036 Internal Server Error: /homework3app/delete_client/111/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 47, in delete_client
+    client = Client.object.get(pk=pk)
+             ^^^^^^^^^^^^^
+AttributeError: type object 'Client' has no attribute 'object'
+ERROR 2024-04-03 15:27:10,421 basehttp 14072 3036 "GET /homework3app/delete_client/111/ HTTP/1.1" 500 65357
+INFO 2024-04-03 15:27:30,671 autoreload 14072 14404 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 15:27:31,502 autoreload 12952 13628 Watching for file changes with StatReloader
+INFO 2024-04-03 15:27:31,943 basehttp 12952 6120 "GET /homework3app/delete_client/111/ HTTP/1.1" 200 460
+INFO 2024-04-03 15:28:01,561 autoreload 12952 13628 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 15:28:02,338 autoreload 17160 10632 Watching for file changes with StatReloader
+INFO 2024-04-03 15:28:06,964 basehttp 17160 11552 "GET /homework3app/delete_client/110/ HTTP/1.1" 200 472
+INFO 2024-04-03 15:28:13,721 basehttp 17160 11552 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 15:28:15,323 basehttp 17160 11552 "GET /homework3app/get_clients HTTP/1.1" 200 16913
+INFO 2024-04-03 15:33:06,831 autoreload 17160 10632 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\urls.py changed, reloading.
+INFO 2024-04-03 15:33:07,599 autoreload 15548 16496 Watching for file changes with StatReloader
+INFO 2024-04-03 15:33:10,187 basehttp 15548 3876 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 15:33:21,907 basehttp 15548 3876 "GET /homework3app/clear_clients HTTP/1.1" 200 480
+INFO 2024-04-03 15:33:47,775 basehttp 15548 3876 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 15:33:48,162 basehttp 15548 3876 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 15:33:57,937 basehttp 15548 3876 "GET /homework3app/get_clients HTTP/1.1" 200 425
+INFO 2024-04-03 15:44:03,146 autoreload 15548 16496 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 15:44:03,788 autoreload 14572 8684 Watching for file changes with StatReloader
+INFO 2024-04-03 15:44:23,203 basehttp 14572 10164 "GET /homework3app/fake_date_products/100 HTTP/1.1" 200 479
+INFO 2024-04-03 15:44:39,976 basehttp 14572 10164 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 15:44:49,067 basehttp 14572 10164 "GET /homework3app/get_products HTTP/1.1" 200 14069
+INFO 2024-04-03 15:51:00,782 autoreload 14572 8684 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 15:51:01,426 autoreload 8316 15120 Watching for file changes with StatReloader
+INFO 2024-04-03 15:51:59,420 autoreload 3888 16172 Watching for file changes with StatReloader
+INFO 2024-04-03 15:53:32,195 autoreload 12336 7312 Watching for file changes with StatReloader
+WARNING 2024-04-03 15:53:35,044 log 12336 12668 Not Found: /
+WARNING 2024-04-03 15:53:35,044 basehttp 12336 12668 "GET / HTTP/1.1" 404 2392
+INFO 2024-04-03 15:53:38,471 basehttp 12336 12668 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 15:53:39,407 basehttp 12336 12668 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 15:54:15,745 basehttp 12336 12668 "GET /homework3app/create_product/nameAdd/descriptionsAdd/10/15 HTTP/1.1" 301 0
+ERROR 2024-04-03 15:54:15,786 log 12336 16012 Internal Server Error: /homework3app/create_product/nameAdd/descriptionsAdd/10/15/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 84, in create_product
+    product = Product(name=name, descriptions=descriptions, price=price, count=count)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Product() got unexpected keyword arguments: 'descriptions', 'count'
+ERROR 2024-04-03 15:54:15,799 basehttp 12336 16012 "GET /homework3app/create_product/nameAdd/descriptionsAdd/10/15/ HTTP/1.1" 500 73802
+INFO 2024-04-03 15:54:47,753 autoreload 12336 7312 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\urls.py changed, reloading.
+INFO 2024-04-03 15:54:48,397 autoreload 4036 5096 Watching for file changes with StatReloader
+ERROR 2024-04-03 15:54:57,366 log 4036 5576 Internal Server Error: /homework3app/create_product/nameAdd/descriptionsAdd/10/15/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 84, in create_product
+    product = Product(name=name, descriptions=descriptions, price=price, count=count)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Product() got unexpected keyword arguments: 'descriptions', 'count'
+ERROR 2024-04-03 15:54:57,381 basehttp 4036 5576 "GET /homework3app/create_product/nameAdd/descriptionsAdd/10/15/ HTTP/1.1" 500 73912
+INFO 2024-04-03 15:56:22,045 autoreload 4036 5096 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 15:56:22,940 autoreload 15976 5532 Watching for file changes with StatReloader
+WARNING 2024-04-03 15:56:30,303 log 15976 13644 Not Found: /homework3app/create_product/nameAdd/descriptionsAdd/10.12/15/
+WARNING 2024-04-03 15:56:30,305 basehttp 15976 13644 "GET /homework3app/create_product/nameAdd/descriptionsAdd/10.12/15/ HTTP/1.1" 404 4434
+INFO 2024-04-03 15:57:00,370 autoreload 15976 5532 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\urls.py changed, reloading.
+INFO 2024-04-03 15:57:01,188 autoreload 1744 3120 Watching for file changes with StatReloader
+WARNING 2024-04-03 15:57:03,458 log 1744 14656 Not Found: /homework3app/create_product/nameAdd/descriptionsAdd/10.12/15/
+WARNING 2024-04-03 15:57:03,460 basehttp 1744 14656 "GET /homework3app/create_product/nameAdd/descriptionsAdd/10.12/15/ HTTP/1.1" 404 4433
+INFO 2024-04-03 15:57:20,165 autoreload 1744 3120 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\urls.py changed, reloading.
+INFO 2024-04-03 15:57:21,002 autoreload 15016 15736 Watching for file changes with StatReloader
+WARNING 2024-04-03 15:57:22,676 log 15016 11348 Not Found: /homework3app/create_product/nameAdd/descriptionsAdd/10.12/15/
+WARNING 2024-04-03 15:57:22,676 basehttp 15016 11348 "GET /homework3app/create_product/nameAdd/descriptionsAdd/10.12/15/ HTTP/1.1" 404 4442
+INFO 2024-04-03 15:57:36,894 autoreload 15016 15736 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\urls.py changed, reloading.
+INFO 2024-04-03 15:57:37,613 autoreload 16776 4724 Watching for file changes with StatReloader
+INFO 2024-04-03 15:57:42,970 basehttp 16776 3212 "GET /homework3app/create_product/nameAdd/descriptionsAdd/10/15/ HTTP/1.1" 200 472
+INFO 2024-04-03 15:57:52,237 basehttp 16776 3212 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 15:58:00,659 basehttp 16776 3212 "GET /homework3app/get_products HTTP/1.1" 200 14209
+INFO 2024-04-03 16:03:55,757 autoreload 16776 4724 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 16:03:56,673 autoreload 15760 5444 Watching for file changes with StatReloader
+INFO 2024-04-03 16:04:33,803 autoreload 15760 5444 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\urls.py changed, reloading.
+INFO 2024-04-03 16:04:34,421 autoreload 10000 4500 Watching for file changes with StatReloader
+INFO 2024-04-03 16:04:39,067 basehttp 10000 13700 "GET /homework3app/get_products HTTP/1.1" 200 14209
+INFO 2024-04-03 16:05:06,893 basehttp 10000 13700 "GET /homework3app/delete_product/101 HTTP/1.1" 301 0
+ERROR 2024-04-03 16:05:06,960 log 10000 7780 Internal Server Error: /homework3app/delete_product/101/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 103, in delete_product
+    return render(request, 'homework3app/product_cud.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: homework3app/product_cud.html
+ERROR 2024-04-03 16:05:06,961 basehttp 10000 7780 "GET /homework3app/delete_product/101/ HTTP/1.1" 500 80707
+INFO 2024-04-03 16:06:02,889 basehttp 10000 7780 "GET /homework3app/get_products HTTP/1.1" 200 14069
+INFO 2024-04-03 16:06:29,674 autoreload 10000 4500 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 16:06:30,372 autoreload 9720 6928 Watching for file changes with StatReloader
+INFO 2024-04-03 16:06:45,352 basehttp 9720 12844 "GET /homework3app/delete_product/100 HTTP/1.1" 301 0
+INFO 2024-04-03 16:06:45,372 basehttp 9720 14060 "GET /homework3app/delete_product/100/ HTTP/1.1" 200 476
+INFO 2024-04-03 16:06:52,211 basehttp 9720 14060 "GET /homework3app/get_products HTTP/1.1" 200 13932
+INFO 2024-04-03 16:08:51,167 autoreload 9720 6928 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\urls.py changed, reloading.
+INFO 2024-04-03 16:08:52,213 autoreload 6452 14096 Watching for file changes with StatReloader
+INFO 2024-04-03 16:09:00,342 basehttp 6452 8180 "GET /homework3app/clear_products HTTP/1.1" 200 471
+INFO 2024-04-03 16:09:07,523 basehttp 6452 8180 "GET /homework3app/get_products HTTP/1.1" 200 409
+INFO 2024-04-03 16:09:08,617 basehttp 6452 8180 "GET /homework3app/get_products HTTP/1.1" 200 409
+INFO 2024-04-03 16:13:52,843 autoreload 6452 14096 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 16:13:53,476 autoreload 12096 17200 Watching for file changes with StatReloader
+INFO 2024-04-03 16:14:10,039 basehttp 12096 12660 "GET /homework3app/delete_product/345 HTTP/1.1" 301 0
+ERROR 2024-04-03 16:14:10,085 log 12096 5560 Internal Server Error: /homework3app/delete_product/345/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 104, in delete_product
+    product = Product.objects.get(pk=pk)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+homework3app.models.Product.DoesNotExist: Product matching query does not exist.
+ERROR 2024-04-03 16:14:10,093 basehttp 12096 5560 "GET /homework3app/delete_product/345/ HTTP/1.1" 500 74587
+INFO 2024-04-03 16:16:31,662 autoreload 12096 17200 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 16:16:32,618 autoreload 8804 14296 Watching for file changes with StatReloader
+INFO 2024-04-03 21:16:07,493 autoreload 8804 14296 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 21:16:08,600 autoreload 2952 13892 Watching for file changes with StatReloader
+INFO 2024-04-03 21:33:26,716 autoreload 2952 13892 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-03 21:33:28,025 autoreload 3636 14544 Watching for file changes with StatReloader
+INFO 2024-04-03 21:36:12,327 basehttp 3636 12260 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-03 21:36:18,828 basehttp 3636 12260 "GET /homework3app/get_products HTTP/1.1" 200 409
+INFO 2024-04-03 21:36:19,936 basehttp 3636 12260 "GET /homework3app/get_products HTTP/1.1" 200 409
+INFO 2024-04-03 21:36:25,950 basehttp 3636 12260 "GET /homework3app/get_clients HTTP/1.1" 200 425
+INFO 2024-04-03 21:37:10,584 basehttp 3636 12260 "GET /homework3app/fake_date_clients/100 HTTP/1.1" 200 478
+INFO 2024-04-03 21:37:31,167 basehttp 3636 12260 "GET /homework3app/fake_date_products/100 HTTP/1.1" 200 479
+ERROR 2024-04-03 21:42:59,098 log 3636 16284 Internal Server Error: /homework3app/clear_clients
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 56, in clear_clients
+    item.delete()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1179, in delete
+    return collector.delete()
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\deletion.py", line 472, in delete
+    count = qs._raw_delete(using=self.using)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1210, in _raw_delete
+    cursor = query.get_compiler(using).execute_sql(CURSOR)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-04-03 21:42:59,101 basehttp 3636 16284 "GET /homework3app/clear_clients HTTP/1.1" 500 131307
+INFO 2024-04-03 21:43:19,630 basehttp 3636 16284 "GET /homework3app/clear_clients HTTP/1.1" 200 467
+INFO 2024-04-03 21:43:29,397 basehttp 3636 16284 "GET /homework3app/clear_products HTTP/1.1" 200 471
+ERROR 2024-04-03 21:45:11,410 log 3636 16284 Internal Server Error: /homework3app/fake_date_clients/10
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 16, in fake_date_client
+    client.save()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1835, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\base\operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-04-03 21:45:11,410 basehttp 3636 16284 "GET /homework3app/fake_date_clients/10 HTTP/1.1" 500 125369
+INFO 2024-04-03 21:45:19,447 basehttp 3636 16284 "GET /homework3app/fake_date_clients/10 HTTP/1.1" 200 478
+INFO 2024-04-03 21:45:25,977 basehttp 3636 16284 "GET /homework3app/get_products HTTP/1.1" 200 409
+INFO 2024-04-03 21:45:28,793 basehttp 3636 16284 "GET /homework3app/get_clients HTTP/1.1" 200 1885
+INFO 2024-04-04 09:54:03,179 autoreload 13480 10132 Watching for file changes with StatReloader
+WARNING 2024-04-04 09:54:04,699 log 13480 4920 Not Found: /
+WARNING 2024-04-04 09:54:04,700 basehttp 13480 4920 "GET / HTTP/1.1" 404 2392
+WARNING 2024-04-04 09:54:04,787 log 13480 4920 Not Found: /favicon.ico
+WARNING 2024-04-04 09:54:04,787 basehttp 13480 4920 "GET /favicon.ico HTTP/1.1" 404 2443
+INFO 2024-04-04 09:54:08,589 basehttp 13480 4920 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-04 09:54:10,081 basehttp 13480 4920 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-04 09:54:21,149 basehttp 13480 4920 "GET /homework3app/fake_date_clients/100 HTTP/1.1" 200 478
+INFO 2024-04-04 09:54:24,896 basehttp 13480 4920 "GET /homework3app/fake_date_clients/100 HTTP/1.1" 200 478
+ERROR 2024-04-04 09:55:55,776 log 13480 4920 Internal Server Error: /homework3app/clear_clients
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\base\base.py", line 299, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 56, in clear_clients
+    item.delete()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1179, in delete
+    return collector.delete()
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\deletion.py", line 459, in delete
+    with transaction.atomic(using=self.using, savepoint=False):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\transaction.py", line 263, in __exit__
+    connection.commit()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\base\base.py", line 323, in commit
+    self._commit()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\base\base.py", line 298, in _commit
+    with debug_transaction(self, "COMMIT"), self.wrap_database_errors:
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\base\base.py", line 299, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-04-04 09:55:55,782 basehttp 13480 4920 "GET /homework3app/clear_clients HTTP/1.1" 500 109350
+INFO 2024-04-04 09:55:59,995 basehttp 13480 4920 "GET /homework3app/clear_clients HTTP/1.1" 200 467
+INFO 2024-04-04 11:19:41,089 autoreload 13480 10132 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-04 11:19:41,642 autoreload 15552 12644 Watching for file changes with StatReloader
+INFO 2024-04-04 11:26:55,546 autoreload 15692 14584 Watching for file changes with StatReloader
+WARNING 2024-04-04 11:26:56,472 log 15692 11736 Not Found: /
+WARNING 2024-04-04 11:26:56,472 basehttp 15692 11736 "GET / HTTP/1.1" 404 2392
+INFO 2024-04-04 11:26:59,961 basehttp 15692 11736 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-04 11:27:00,636 basehttp 15692 11736 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-04 11:27:07,192 basehttp 15692 11736 "GET /homework3app/fake_date_clients/100 HTTP/1.1" 200 478
+INFO 2024-04-04 11:29:21,484 autoreload 9108 3724 Watching for file changes with StatReloader
+INFO 2024-04-04 11:29:41,171 basehttp 9108 8584 "GET /homework3app/fake_date_products/100 HTTP/1.1" 200 479
+INFO 2024-04-04 11:30:52,793 basehttp 9108 8584 "GET /homework3app/clear_products HTTP/1.1" 200 471
+INFO 2024-04-04 11:30:59,245 basehttp 9108 8584 "GET /homework3app/fake_date_products/100 HTTP/1.1" 200 479
+INFO 2024-04-04 11:31:39,140 autoreload 9108 3724 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-04 11:31:39,546 autoreload 360 7244 Watching for file changes with StatReloader
+INFO 2024-04-04 11:31:44,639 basehttp 360 3136 "GET /homework3app/clear_products HTTP/1.1" 200 471
+INFO 2024-04-04 11:31:50,419 basehttp 360 3136 "GET /homework3app/fake_date_products/100 HTTP/1.1" 200 479
+INFO 2024-04-04 11:32:16,445 autoreload 360 7244 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-04 11:32:16,894 autoreload 14164 9336 Watching for file changes with StatReloader
+INFO 2024-04-04 11:41:04,663 autoreload 14164 9336 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\models.py changed, reloading.
+INFO 2024-04-04 11:41:05,110 autoreload 7180 13160 Watching for file changes with StatReloader
+INFO 2024-04-04 11:42:45,961 autoreload 7180 13160 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\models.py changed, reloading.
+INFO 2024-04-04 11:42:46,369 autoreload 6068 16500 Watching for file changes with StatReloader
+INFO 2024-04-04 21:21:21,007 autoreload 5624 14556 Watching for file changes with StatReloader
+WARNING 2024-04-04 21:21:24,241 log 5624 15840 Not Found: /
+WARNING 2024-04-04 21:21:24,247 basehttp 5624 15840 "GET / HTTP/1.1" 404 2392
+WARNING 2024-04-04 21:21:24,479 log 5624 15840 Not Found: /favicon.ico
+WARNING 2024-04-04 21:21:24,479 basehttp 5624 15840 "GET /favicon.ico HTTP/1.1" 404 2443
+INFO 2024-04-04 21:21:27,458 basehttp 5624 15840 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-04 21:21:29,559 basehttp 5624 15840 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-04 21:22:31,968 basehttp 5624 15840 "GET /homework3app/orders_by_id/530 HTTP/1.1" 301 0
+ERROR 2024-04-04 21:22:32,041 log 5624 12100 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 17, in orders_by_id
+    'name': client.name,
+            ^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'name'
+ERROR 2024-04-04 21:22:32,044 basehttp 5624 12100 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 67635
+INFO 2024-04-04 21:23:09,375 autoreload 5624 14556 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-04 21:23:10,077 autoreload 11532 15032 Watching for file changes with StatReloader
+ERROR 2024-04-04 21:23:13,169 log 11532 17456 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 17, in orders_by_id
+    'name': client.get('name'),
+            ^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1492, in build_filter
+    arg, value = filter_expr
+    ^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+ERROR 2024-04-04 21:23:13,169 basehttp 11532 17456 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 100959
+INFO 2024-04-04 21:26:45,557 autoreload 11532 15032 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-04 21:26:46,204 autoreload 11908 14752 Watching for file changes with StatReloader
+INFO 2024-04-04 21:26:52,846 basehttp 11908 8992 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 858
+INFO 2024-04-04 21:27:36,764 basehttp 11908 8992 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 886
+INFO 2024-04-04 21:28:08,567 autoreload 11908 14752 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-04 21:28:09,194 autoreload 17356 11676 Watching for file changes with StatReloader
+INFO 2024-04-04 21:28:09,444 basehttp 17356 10364 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 886
+INFO 2024-04-04 21:28:54,599 autoreload 17356 11676 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-04 21:28:55,412 autoreload 7784 11192 Watching for file changes with StatReloader
+ERROR 2024-04-04 21:28:55,943 log 7784 14812 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 21, in orders_by_id
+    print(client.name)
+          ^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'name'
+ERROR 2024-04-04 21:28:55,945 basehttp 7784 14812 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 69514
+INFO 2024-04-04 21:29:19,303 autoreload 7784 11192 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-04 21:29:19,971 autoreload 16816 8484 Watching for file changes with StatReloader
+ERROR 2024-04-04 21:29:20,277 log 16816 1692 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 21, in orders_by_id
+    print(client.get_constraints())
+          ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'get_constraints'
+ERROR 2024-04-04 21:29:20,277 basehttp 16816 1692 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 69606
+INFO 2024-04-04 21:30:18,639 autoreload 16816 8484 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-04 21:30:19,283 autoreload 9728 18168 Watching for file changes with StatReloader
+INFO 2024-04-04 21:33:21,703 autoreload 9728 18168 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-04 21:33:22,422 autoreload 11668 17412 Watching for file changes with StatReloader
+ERROR 2024-04-04 21:33:24,597 log 11668 15532 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 21, in orders_by_id
+    print(client.Name)
+          ^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'Name'
+ERROR 2024-04-04 21:33:24,612 basehttp 11668 15532 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 69514
+INFO 2024-04-04 21:38:29,812 autoreload 11668 17412 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-04 21:38:30,546 autoreload 6048 13140 Watching for file changes with StatReloader
+ERROR 2024-04-04 21:38:34,349 log 6048 11980 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 21, in orders_by_id
+    print(str(client.name))
+              ^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'name'
+ERROR 2024-04-04 21:38:34,351 basehttp 6048 11980 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 69532
+INFO 2024-04-04 21:38:49,562 autoreload 6048 13140 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-04 21:38:50,373 autoreload 13160 18084 Watching for file changes with StatReloader
+ERROR 2024-04-04 22:05:45,917 log 13160 13488 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 21, in orders_by_id
+    print(client.name)
+          ^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'name'
+ERROR 2024-04-04 22:05:45,917 basehttp 13160 13488 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 69514
+INFO 2024-04-05 07:19:31,522 autoreload 13160 18084 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 07:19:32,088 autoreload 12108 19860 Watching for file changes with StatReloader
+INFO 2024-04-05 07:19:36,386 basehttp 12108 17732 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 886
+INFO 2024-04-05 07:20:33,504 autoreload 12108 19860 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 07:20:33,923 autoreload 8660 18856 Watching for file changes with StatReloader
+ERROR 2024-04-05 07:20:34,745 log 8660 18100 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 21, in orders_by_id
+    client.get('name')
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1492, in build_filter
+    arg, value = filter_expr
+    ^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+ERROR 2024-04-05 07:20:34,745 basehttp 8660 18100 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 102675
+INFO 2024-04-05 07:20:43,323 autoreload 8660 18856 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 07:20:43,751 autoreload 19612 10640 Watching for file changes with StatReloader
+ERROR 2024-04-05 07:20:43,976 log 19612 9852 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 21, in orders_by_id
+    client.get('Name')
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1492, in build_filter
+    arg, value = filter_expr
+    ^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+ERROR 2024-04-05 07:20:43,979 basehttp 19612 9852 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 102675
+ERROR 2024-04-05 07:20:44,916 log 19612 9852 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 21, in orders_by_id
+    client.get('Name')
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1492, in build_filter
+    arg, value = filter_expr
+    ^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+ERROR 2024-04-05 07:20:44,917 basehttp 19612 9852 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 102675
+INFO 2024-04-05 07:21:28,767 autoreload 19612 10640 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 07:21:29,221 autoreload 18692 14048 Watching for file changes with StatReloader
+INFO 2024-04-05 07:22:11,098 autoreload 18692 14048 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 07:22:11,538 autoreload 19984 11280 Watching for file changes with StatReloader
+INFO 2024-04-05 07:22:18,922 autoreload 19984 11280 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 07:22:19,354 autoreload 10536 15280 Watching for file changes with StatReloader
+ERROR 2024-04-05 07:22:24,646 log 10536 18620 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 13, in orders_by_id
+    client = dict(Client.objects.filter(pk=pk))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+ERROR 2024-04-05 07:22:24,647 basehttp 10536 18620 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 67616
+INFO 2024-04-05 07:22:28,856 autoreload 10536 15280 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 07:22:29,397 autoreload 8256 4912 Watching for file changes with StatReloader
+ERROR 2024-04-05 07:22:30,332 log 8256 6128 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 13, in orders_by_id
+    client = dict(Client.objects.filter(pk=pk))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+ERROR 2024-04-05 07:22:30,333 basehttp 8256 6128 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 67616
+ERROR 2024-04-05 07:22:31,571 log 8256 6128 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 13, in orders_by_id
+    client = dict(Client.objects.filter(pk=pk))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+ERROR 2024-04-05 07:22:31,572 basehttp 8256 6128 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 67616
+INFO 2024-04-05 07:22:55,047 autoreload 8256 4912 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 07:22:55,473 autoreload 18444 19368 Watching for file changes with StatReloader
+ERROR 2024-04-05 07:22:55,595 log 18444 7532 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 13, in orders_by_id
+    client = dict(Client.objects.filter(pk=pk))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+ERROR 2024-04-05 07:22:55,596 basehttp 18444 7532 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 67616
+INFO 2024-04-05 07:23:27,253 autoreload 18444 19368 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 07:23:27,687 autoreload 2616 5024 Watching for file changes with StatReloader
+ERROR 2024-04-05 07:23:28,676 log 2616 19124 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 13, in orders_by_id
+    client = list(Client.objects.filter(pk=pk).first())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Client' object is not iterable
+ERROR 2024-04-05 07:23:28,676 basehttp 2616 19124 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 67548
+INFO 2024-04-05 07:23:46,229 autoreload 2616 5024 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 07:23:46,656 autoreload 3984 16828 Watching for file changes with StatReloader
+ERROR 2024-04-05 07:23:47,081 log 3984 18872 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 13, in orders_by_id
+    client = list(Client.objects.filter(pk=pk).first())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Client' object is not iterable
+ERROR 2024-04-05 07:23:47,083 basehttp 3984 18872 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 67548
+ERROR 2024-04-05 07:23:47,686 log 3984 18872 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 13, in orders_by_id
+    client = list(Client.objects.filter(pk=pk).first())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'Client' object is not iterable
+ERROR 2024-04-05 07:23:47,686 basehttp 3984 18872 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 67548
+INFO 2024-04-05 07:24:01,140 autoreload 3984 16828 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 07:24:01,559 autoreload 4020 17968 Watching for file changes with StatReloader
+ERROR 2024-04-05 07:24:01,675 log 4020 6796 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 21, in orders_by_id
+    for i in client:
+TypeError: 'Client' object is not iterable
+ERROR 2024-04-05 07:24:01,675 basehttp 4020 6796 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 69342
+INFO 2024-04-05 07:24:17,095 autoreload 4020 17968 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 07:24:17,521 autoreload 15616 2348 Watching for file changes with StatReloader
+INFO 2024-04-05 07:24:17,754 basehttp 15616 9960 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 886
+INFO 2024-04-05 07:24:35,041 autoreload 15616 2348 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 07:24:35,531 autoreload 18540 10020 Watching for file changes with StatReloader
+INFO 2024-04-05 07:24:36,010 basehttp 18540 19488 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 886
+INFO 2024-04-05 07:24:54,115 autoreload 18540 10020 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 07:24:54,540 autoreload 14792 6732 Watching for file changes with StatReloader
+ERROR 2024-04-05 07:24:54,853 log 14792 4420 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 17, in orders_by_id
+    'name': client.get('name'),
+            ^^^^^^^^^^
+AttributeError: 'Client' object has no attribute 'get'
+ERROR 2024-04-05 07:24:54,854 basehttp 14792 4420 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 67781
+INFO 2024-04-05 07:25:04,954 autoreload 14792 6732 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 07:25:05,395 autoreload 4752 17204 Watching for file changes with StatReloader
+INFO 2024-04-05 07:25:05,617 basehttp 4752 8104 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 926
+INFO 2024-04-05 07:25:08,674 basehttp 4752 8104 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 926
+INFO 2024-04-05 07:25:09,528 basehttp 4752 8104 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 926
+INFO 2024-04-05 07:25:10,370 basehttp 4752 8104 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 926
+INFO 2024-04-05 20:38:02,810 autoreload 4636 21412 Watching for file changes with StatReloader
+WARNING 2024-04-05 20:38:07,277 log 4636 21312 Not Found: /
+WARNING 2024-04-05 20:38:07,279 basehttp 4636 21312 "GET / HTTP/1.1" 404 2392
+INFO 2024-04-05 20:38:10,136 basehttp 4636 21312 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-05 20:38:14,242 basehttp 4636 21312 "GET /homework3app/ HTTP/1.1" 200 542
+ERROR 2024-04-05 20:38:26,594 log 4636 21312 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 23, in orders_by_id
+    return render(request, 'homework3app/order_by_id.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'orders_client_for_weak' with arguments '('',)' not found. 1 pattern(s) tried: ['homework3app/orders_client_for_weak/\\Z']
+ERROR 2024-04-05 20:38:26,605 basehttp 4636 21312 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 197887
+ERROR 2024-04-05 20:38:56,547 log 4636 21312 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 23, in orders_by_id
+    return render(request, 'homework3app/order_by_id.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 1380, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ',' from ''orders_client_for_weak','
+ERROR 2024-04-05 20:38:56,551 basehttp 4636 21312 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 186372
+ERROR 2024-04-05 20:38:57,501 log 4636 21312 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 23, in orders_by_id
+    return render(request, 'homework3app/order_by_id.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 1380, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ',' from ''orders_client_for_weak','
+ERROR 2024-04-05 20:38:57,505 basehttp 4636 21312 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 186372
+INFO 2024-04-05 20:39:56,292 autoreload 4636 21412 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\urls.py changed, reloading.
+INFO 2024-04-05 20:39:56,924 autoreload 7180 7192 Watching for file changes with StatReloader
+ERROR 2024-04-05 20:40:02,059 log 7180 20440 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 23, in orders_by_id
+    return render(request, 'homework3app/order_by_id.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 1380, in url
+    viewname = parser.compile_filter(bits[1])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ',' from ''orders_client_for_weak','
+ERROR 2024-04-05 20:40:02,064 basehttp 7180 20440 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 186372
+ERROR 2024-04-05 20:40:18,751 log 7180 20440 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 23, in orders_by_id
+    return render(request, 'homework3app/order_by_id.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'orders_client_for_weak' with arguments '('',)' not found. 1 pattern(s) tried: ['homework3app/orders_client_for_weak/(?P<id>[0-9]+)\\Z']
+ERROR 2024-04-05 20:40:18,756 basehttp 7180 20440 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 199411
+ERROR 2024-04-05 20:40:56,103 log 7180 20440 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 23, in orders_by_id
+    return render(request, 'homework3app/order_by_id.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'orders_client_for_weak/pk' not found. 'orders_client_for_weak/pk' is not a valid view function or pattern name.
+ERROR 2024-04-05 20:40:56,106 basehttp 7180 20440 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 195730
+INFO 2024-04-05 20:41:27,706 autoreload 7180 7192 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\urls.py changed, reloading.
+INFO 2024-04-05 20:41:28,396 autoreload 14808 18004 Watching for file changes with StatReloader
+ERROR 2024-04-05 20:41:28,913 log 14808 20780 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 23, in orders_by_id
+    return render(request, 'homework3app/order_by_id.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'orders_client_for_weak/pk' not found. 'orders_client_for_weak/pk' is not a valid view function or pattern name.
+ERROR 2024-04-05 20:41:28,919 basehttp 14808 20780 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 195730
+ERROR 2024-04-05 20:41:30,061 log 14808 20780 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 23, in orders_by_id
+    return render(request, 'homework3app/order_by_id.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'orders_client_for_weak/pk' not found. 'orders_client_for_weak/pk' is not a valid view function or pattern name.
+ERROR 2024-04-05 20:41:30,066 basehttp 14808 20780 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 195730
+ERROR 2024-04-05 20:46:05,109 log 14808 20780 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 23, in orders_by_id
+    return render(request, 'homework3app/order_by_id.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'orders_client_for_weak/pk' not found. 'orders_client_for_weak/pk' is not a valid view function or pattern name.
+ERROR 2024-04-05 20:46:05,113 basehttp 14808 20780 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 195911
+ERROR 2024-04-05 20:46:08,105 log 14808 20780 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 23, in orders_by_id
+    return render(request, 'homework3app/order_by_id.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'orders_client_for_weak/pk' not found. 'orders_client_for_weak/pk' is not a valid view function or pattern name.
+ERROR 2024-04-05 20:46:08,109 basehttp 14808 20780 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 195911
+ERROR 2024-04-05 20:46:09,160 log 14808 20780 Internal Server Error: /homework3app/orders_by_id/530/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 23, in orders_by_id
+    return render(request, 'homework3app/order_by_id.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'orders_client_for_weak/pk' not found. 'orders_client_for_weak/pk' is not a valid view function or pattern name.
+ERROR 2024-04-05 20:46:09,165 basehttp 14808 20780 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 500 195911
+INFO 2024-04-05 20:48:09,105 autoreload 14808 18004 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 20:48:09,748 autoreload 15256 1064 Watching for file changes with StatReloader
+INFO 2024-04-05 20:48:16,768 basehttp 15256 17732 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 1047
+INFO 2024-04-05 20:48:19,446 basehttp 15256 17732 "GET /homework3app/orders_client_for_weak/530 HTTP/1.1" 200 68
+INFO 2024-04-05 20:48:21,927 basehttp 15256 17732 "GET /homework3app/orders_client_for_month/530 HTTP/1.1" 200 68
+INFO 2024-04-05 20:48:23,778 basehttp 15256 17732 "GET /homework3app/orders_client_for_year/530 HTTP/1.1" 200 68
+INFO 2024-04-05 20:57:26,933 autoreload 15256 1064 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 20:57:27,630 autoreload 18488 6084 Watching for file changes with StatReloader
+INFO 2024-04-05 20:57:58,621 autoreload 18488 6084 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 20:57:59,402 autoreload 17940 16720 Watching for file changes with StatReloader
+INFO 2024-04-05 20:58:54,997 autoreload 17940 16720 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 20:58:55,623 autoreload 1856 5768 Watching for file changes with StatReloader
+INFO 2024-04-05 20:59:52,209 autoreload 1856 5768 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 20:59:53,046 autoreload 17464 8428 Watching for file changes with StatReloader
+INFO 2024-04-05 21:02:32,127 autoreload 17464 8428 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:02:32,777 autoreload 15496 17724 Watching for file changes with StatReloader
+INFO 2024-04-05 21:02:39,539 basehttp 15496 19356 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 1047
+INFO 2024-04-05 21:02:42,031 basehttp 15496 19356 "GET /homework3app/orders_client_for_month/530 HTTP/1.1" 200 2163
+INFO 2024-04-05 21:05:01,661 autoreload 15496 17724 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:05:02,421 autoreload 18672 8412 Watching for file changes with StatReloader
+INFO 2024-04-05 21:05:02,720 basehttp 18672 19104 "GET /homework3app/orders_client_for_month/530 HTTP/1.1" 200 2163
+INFO 2024-04-05 21:05:04,166 basehttp 18672 19104 "GET /homework3app/orders_client_for_month/530 HTTP/1.1" 200 2163
+INFO 2024-04-05 21:05:07,028 basehttp 18672 19104 "GET /homework3app/orders_client_for_weak/530 HTTP/1.1" 200 68
+INFO 2024-04-05 21:05:09,493 basehttp 18672 19104 "GET /homework3app/orders_client_for_month/530 HTTP/1.1" 200 2163
+INFO 2024-04-05 21:05:12,479 basehttp 18672 19104 "GET /homework3app/orders_client_for_month/530 HTTP/1.1" 200 2163
+INFO 2024-04-05 21:06:59,426 autoreload 18672 8412 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:07:00,138 autoreload 11508 8224 Watching for file changes with StatReloader
+INFO 2024-04-05 21:07:01,657 basehttp 11508 16628 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 1047
+INFO 2024-04-05 21:07:03,255 basehttp 11508 16628 "GET /homework3app/orders_client_for_month/530 HTTP/1.1" 200 2163
+INFO 2024-04-05 21:08:43,008 autoreload 11508 8224 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:08:43,793 autoreload 11240 17652 Watching for file changes with StatReloader
+INFO 2024-04-05 21:08:47,984 basehttp 11240 15288 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 1047
+INFO 2024-04-05 21:08:49,758 basehttp 11240 15288 "GET /homework3app/orders_client_for_weak/530 HTTP/1.1" 200 77
+INFO 2024-04-05 21:09:29,357 autoreload 11240 17652 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:09:30,119 autoreload 18008 19552 Watching for file changes with StatReloader
+INFO 2024-04-05 21:09:30,415 basehttp 18008 12240 "GET /homework3app/orders_client_for_weak/530 HTTP/1.1" 200 72
+INFO 2024-04-05 21:09:41,739 autoreload 18008 19552 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:09:42,389 autoreload 2988 12124 Watching for file changes with StatReloader
+INFO 2024-04-05 21:09:42,635 basehttp 2988 20144 "GET /homework3app/orders_client_for_weak/530 HTTP/1.1" 200 82
+INFO 2024-04-05 21:09:44,946 basehttp 2988 20144 "GET /homework3app/orders_client_for_weak/530 HTTP/1.1" 200 82
+INFO 2024-04-05 21:11:17,853 autoreload 2988 12124 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:11:18,614 autoreload 14904 19028 Watching for file changes with StatReloader
+INFO 2024-04-05 21:11:20,786 basehttp 14904 21092 "GET /homework3app/orders_client_for_month/530 HTTP/1.1" 200 14495
+INFO 2024-04-05 21:12:01,103 autoreload 14904 19028 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:12:01,836 autoreload 19576 17984 Watching for file changes with StatReloader
+INFO 2024-04-05 21:12:02,855 basehttp 19576 16096 "GET /homework3app/orders_client_for_month/530 HTTP/1.1" 200 2163
+INFO 2024-04-05 21:13:57,889 autoreload 19576 17984 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:13:58,676 autoreload 14800 1224 Watching for file changes with StatReloader
+INFO 2024-04-05 21:14:01,048 basehttp 14800 15980 "GET /homework3app/orders_client_for_month/530 HTTP/1.1" 200 3236
+INFO 2024-04-05 21:14:02,556 basehttp 14800 15980 "GET /homework3app/orders_client_for_month/530 HTTP/1.1" 200 3236
+INFO 2024-04-05 21:19:48,330 autoreload 14800 1224 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:19:49,053 autoreload 9732 19200 Watching for file changes with StatReloader
+INFO 2024-04-05 21:20:47,728 autoreload 9732 19200 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:20:48,548 autoreload 12680 19224 Watching for file changes with StatReloader
+INFO 2024-04-05 21:21:14,498 autoreload 12680 19224 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:21:15,221 autoreload 20508 20168 Watching for file changes with StatReloader
+INFO 2024-04-05 21:25:07,865 autoreload 20508 20168 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\urls.py changed, reloading.
+INFO 2024-04-05 21:25:08,504 autoreload 12540 13824 Watching for file changes with StatReloader
+INFO 2024-04-05 21:25:18,543 basehttp 12540 8524 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 1055
+INFO 2024-04-05 21:25:19,580 basehttp 12540 8524 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 1055
+ERROR 2024-04-05 21:25:21,746 log 12540 8524 Internal Server Error: /homework3app/orders_client_for_weak/530/7
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 30, in orders_client_by_time
+    orders = Order.objects.filter(customer=customer,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'customer' into field. Choices are: client, client_id, date_of_registration, id, order_price, product
+ERROR 2024-04-05 21:25:21,749 basehttp 12540 8524 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 500 129328
+INFO 2024-04-05 21:26:15,710 autoreload 12540 13824 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:26:16,465 autoreload 10140 18916 Watching for file changes with StatReloader
+INFO 2024-04-05 21:31:42,405 autoreload 10140 18916 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:31:43,127 autoreload 20796 15728 Watching for file changes with StatReloader
+ERROR 2024-04-05 21:31:44,032 log 20796 13888 Internal Server Error: /homework3app/orders_client_for_weak/530/7
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 30, in orders_client_by_time
+    orders = Order.objects.filter(client=customer,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'time_stamp_on_create' into field. Choices are: client, client_id, date_of_registration, id, order_price, product
+ERROR 2024-04-05 21:31:44,037 basehttp 20796 13888 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 500 130150
+INFO 2024-04-05 21:32:21,392 autoreload 20796 15728 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:32:22,087 autoreload 19296 18340 Watching for file changes with StatReloader
+INFO 2024-04-05 21:32:24,397 basehttp 19296 13820 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 200 510
+INFO 2024-04-05 21:32:28,916 basehttp 19296 13820 "GET /homework3app/orders_client_for_weak/530/30 HTTP/1.1" 200 508
+INFO 2024-04-05 21:32:31,258 basehttp 19296 13820 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 200 2112
+INFO 2024-04-05 21:35:07,430 autoreload 19296 18340 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:35:08,230 autoreload 11392 4364 Watching for file changes with StatReloader
+ERROR 2024-04-05 21:35:09,434 log 11392 12428 Internal Server Error: /homework3app/orders_client_for_weak/530/365
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 32, in orders_client_by_time
+    products = set([p for o in orders for p in o.products.all()])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 32, in <listcomp>
+    products = set([p for o in orders for p in o.products.all()])
+                                               ^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'products'
+ERROR 2024-04-05 21:35:09,438 basehttp 11392 12428 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 500 72762
+ERROR 2024-04-05 21:35:10,431 log 11392 12428 Internal Server Error: /homework3app/orders_client_for_weak/530/365
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 32, in orders_client_by_time
+    products = set([p for o in orders for p in o.products.all()])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 32, in <listcomp>
+    products = set([p for o in orders for p in o.products.all()])
+                                               ^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'products'
+ERROR 2024-04-05 21:35:10,434 basehttp 11392 12428 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 500 72762
+INFO 2024-04-05 21:35:20,025 basehttp 11392 12428 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 200 510
+INFO 2024-04-05 21:35:22,563 basehttp 11392 12428 "GET /homework3app/orders_client_for_weak/530/30 HTTP/1.1" 200 508
+ERROR 2024-04-05 21:35:25,336 log 11392 12428 Internal Server Error: /homework3app/orders_client_for_weak/530/365
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 32, in orders_client_by_time
+    products = set([p for o in orders for p in o.products.all()])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 32, in <listcomp>
+    products = set([p for o in orders for p in o.products.all()])
+                                               ^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'products'
+ERROR 2024-04-05 21:35:25,337 basehttp 11392 12428 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 500 72625
+INFO 2024-04-05 21:35:42,607 autoreload 11392 4364 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:35:43,427 autoreload 11380 18836 Watching for file changes with StatReloader
+INFO 2024-04-05 21:35:43,772 basehttp 11380 372 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 200 2212
+INFO 2024-04-05 21:36:27,843 basehttp 11380 372 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 200 2212
+INFO 2024-04-05 21:36:28,877 basehttp 11380 372 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 200 2212
+INFO 2024-04-05 21:36:38,374 basehttp 11380 372 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 200 2211
+INFO 2024-04-05 21:36:39,271 basehttp 11380 372 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 200 2211
+INFO 2024-04-05 21:37:02,928 basehttp 11380 372 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 200 2211
+INFO 2024-04-05 21:39:04,010 basehttp 11380 372 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 200 509
+INFO 2024-04-05 21:39:07,256 basehttp 11380 372 "GET /homework3app/orders_client_for_weak/530/30 HTTP/1.1" 200 507
+INFO 2024-04-05 21:39:09,848 basehttp 11380 372 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 200 2211
+INFO 2024-04-05 21:42:57,857 autoreload 11380 18836 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:42:58,698 autoreload 6236 18196 Watching for file changes with StatReloader
+INFO 2024-04-05 21:44:18,893 autoreload 6236 18196 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:44:19,585 autoreload 15928 15756 Watching for file changes with StatReloader
+INFO 2024-04-05 21:44:24,604 basehttp 15928 12128 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 200 2217
+INFO 2024-04-05 21:44:27,166 basehttp 15928 12128 "GET /homework3app/orders_client_for_weak/530/30 HTTP/1.1" 200 2215
+INFO 2024-04-05 21:44:29,901 basehttp 15928 12128 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 200 816
+INFO 2024-04-05 21:44:45,787 basehttp 15928 12128 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 200 2217
+INFO 2024-04-05 21:47:23,338 autoreload 15928 15756 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-05 21:47:24,091 autoreload 17592 15032 Watching for file changes with StatReloader
+INFO 2024-04-05 21:47:26,607 basehttp 17592 10792 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 200 2217
+INFO 2024-04-05 21:48:04,390 basehttp 17592 10792 "GET /homework3app/orders_client_for_weak/530/30 HTTP/1.1" 200 2215
+INFO 2024-04-05 21:48:20,197 basehttp 17592 10792 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 200 816
+INFO 2024-04-05 21:51:32,389 autoreload 17592 15032 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\models.py changed, reloading.
+INFO 2024-04-05 21:51:33,035 autoreload 10380 3872 Watching for file changes with StatReloader
+INFO 2024-04-05 21:52:28,208 autoreload 20320 8444 Watching for file changes with StatReloader
+INFO 2024-04-05 21:52:32,989 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 200 1329
+INFO 2024-04-05 21:52:46,401 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 200 509
+INFO 2024-04-05 21:52:48,675 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/30 HTTP/1.1" 200 507
+INFO 2024-04-05 21:55:17,641 basehttp 20320 5032 "GET /homework3app/orders_by_id/530/ HTTP/1.1" 200 1055
+INFO 2024-04-05 21:55:19,157 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 200 884
+INFO 2024-04-05 21:55:25,434 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/30 HTTP/1.1" 200 882
+INFO 2024-04-05 21:55:29,320 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 200 1255
+INFO 2024-04-05 21:55:55,636 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 200 884
+INFO 2024-04-05 21:56:08,019 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/30 HTTP/1.1" 200 882
+INFO 2024-04-05 21:56:13,451 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 200 1255
+INFO 2024-04-05 21:57:05,238 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 200 953
+INFO 2024-04-05 21:57:51,474 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 200 980
+INFO 2024-04-05 21:57:52,925 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 200 980
+INFO 2024-04-05 21:59:06,779 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 200 997
+INFO 2024-04-05 21:59:07,760 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 200 997
+INFO 2024-04-05 22:00:33,899 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/7 HTTP/1.1" 200 991
+INFO 2024-04-05 22:00:36,146 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/30 HTTP/1.1" 200 989
+INFO 2024-04-05 22:00:37,587 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/530/365 HTTP/1.1" 200 1362
+INFO 2024-04-05 22:00:45,802 basehttp 20320 5032 "GET /homework3app/orders_by_id/528/ HTTP/1.1" 200 1055
+INFO 2024-04-05 22:00:47,904 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/528/7 HTTP/1.1" 200 616
+INFO 2024-04-05 22:00:50,734 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/528/30 HTTP/1.1" 200 1293
+INFO 2024-04-05 22:00:52,662 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/528/365 HTTP/1.1" 200 1814
+WARNING 2024-04-05 22:00:58,485 log 20320 5032 Not Found: /
+WARNING 2024-04-05 22:00:58,485 basehttp 20320 5032 "GET / HTTP/1.1" 404 2392
