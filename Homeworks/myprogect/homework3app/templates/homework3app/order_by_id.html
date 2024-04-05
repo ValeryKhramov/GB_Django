@@ -1,0 +1,15 @@
+{% extends 'homework3app/base.html' %}
+
+{% block content %}
+    <div>
+        <p>Заказы клиента:</p>
+        <p>Имя: {{ name }}</p>
+        <p>Номер телефона: {{ number_phone }}</p>
+        <p>Адрес: {{ address }}</p>
+    </div>
+    <div style="text-align: center;">
+        <button><a href="{% url 'orders_client_by_time' client.id 7 %}">Список заказов за последние 7 дней</a></button>
+        <button><a href="{% url 'orders_client_by_time' client.id 30 %}">Список заказов за последний месяц</a></button>
+        <button><a href="{% url 'orders_client_by_time' client.id 365 %}">Список заказов за последний год</a></button>
+    </div>
+{% endblock %}

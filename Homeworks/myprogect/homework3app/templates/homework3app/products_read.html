@@ -1,0 +1,9 @@
+{% extends 'homework3app/base.html' %}
+
+{% block content %}
+    <table>
+        {% for item in my_list %}
+            <tr><td>{{ item }}</td></tr>
+        {% endfor %}
+    </table>
+{% endblock %}
