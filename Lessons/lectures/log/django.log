@@ -188,3 +188,297 @@ INFO 2024-04-01 12:13:16,317 basehttp 16604 16148 "GET /myapp3/author/5/ HTTP/1.
 INFO 2024-04-01 12:13:18,753 basehttp 16604 16148 "GET /myapp3/post/50/ HTTP/1.1" 200 724
 INFO 2024-04-01 12:13:20,740 basehttp 16604 16148 "GET /myapp3/post/49/ HTTP/1.1" 200 662
 INFO 2024-04-01 12:13:22,501 basehttp 16604 16148 "GET /myapp3/post/47/ HTTP/1.1" 200 705
+INFO 2024-04-05 10:11:57,483 autoreload 11176 13812 Watching for file changes with StatReloader
+INFO 2024-04-05 10:11:58,523 basehttp 11176 19240 "GET / HTTP/1.1" 200 315
+INFO 2024-04-05 10:12:02,185 basehttp 11176 19240 "GET /myapp3/ HTTP/1.1" 200 176
+WARNING 2024-04-05 10:12:11,319 log 11176 19240 Not Found: /maapp4/user/add
+WARNING 2024-04-05 10:12:11,320 basehttp 11176 19240 "GET /maapp4/user/add HTTP/1.1" 404 2543
+INFO 2024-04-05 10:12:16,607 basehttp 11176 19240 "GET /myapp4/user/add HTTP/1.1" 301 0
+ERROR 2024-04-05 10:12:16,647 log 11176 16392 Internal Server Error: /myapp4/user/add/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view myapp4.views.user_form didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-04-05 10:12:16,648 basehttp 11176 16392 "GET /myapp4/user/add/ HTTP/1.1" 500 66304
+INFO 2024-04-05 10:13:45,688 autoreload 11176 13812 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 10:13:46,100 autoreload 18188 19656 Watching for file changes with StatReloader
+INFO 2024-04-05 10:13:51,756 basehttp 18188 12208 "GET /myapp4/user/add/ HTTP/1.1" 200 611
+INFO 2024-04-05 10:19:11,882 basehttp 18188 16400 "GET /myapp4/user/add/ HTTP/1.1" 200 885
+ERROR 2024-04-05 10:20:03,019 log 18188 16400 Internal Server Error: /myapp4/user/add/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view myapp4.views.user_form didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-04-05 10:20:03,020 basehttp 18188 16400 "POST /myapp4/user/add/ HTTP/1.1" 500 67536
+INFO 2024-04-05 10:22:15,842 autoreload 18188 19656 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 10:22:16,322 autoreload 14144 13688 Watching for file changes with StatReloader
+INFO 2024-04-05 10:22:18,691 basehttp 14144 17152 "POST /myapp4/user/add/ HTTP/1.1" 200 932
+INFO 2024-04-05 10:22:20,512 basehttp 14144 17152 "POST /myapp4/user/add/ HTTP/1.1" 200 932
+INFO 2024-04-05 10:22:31,285 basehttp 14144 17152 "POST /myapp4/user/add/ HTTP/1.1" 200 932
+INFO 2024-04-05 10:22:31,942 basehttp 14144 17152 "POST /myapp4/user/add/ HTTP/1.1" 200 932
+INFO 2024-04-05 10:22:32,429 basehttp 14144 17152 "POST /myapp4/user/add/ HTTP/1.1" 200 932
+INFO 2024-04-05 10:23:32,965 autoreload 14144 13688 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 10:23:33,372 autoreload 10032 5636 Watching for file changes with StatReloader
+ERROR 2024-04-05 10:23:34,740 log 10032 16968 Internal Server Error: /myapp4/user/add/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view myapp4.views.user_form didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-04-05 10:23:34,742 basehttp 10032 16968 "POST /myapp4/user/add/ HTTP/1.1" 500 67536
+INFO 2024-04-05 10:23:48,277 basehttp 10032 16968 "GET /myapp4/user/add/ HTTP/1.1" 200 885
+ERROR 2024-04-05 10:24:04,441 log 10032 16968 Internal Server Error: /myapp4/user/add/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view myapp4.views.user_form didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-04-05 10:24:04,442 basehttp 10032 16968 "POST /myapp4/user/add/ HTTP/1.1" 500 67534
+ERROR 2024-04-05 10:29:48,233 log 10032 5972 Internal Server Error: /myapp4/user/add/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view myapp4.views.user_form didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-04-05 10:29:48,234 basehttp 10032 5972 "POST /myapp4/user/add/ HTTP/1.1" 500 67534
+ERROR 2024-04-05 10:29:51,414 log 10032 5972 Internal Server Error: /myapp4/user/add/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view myapp4.views.user_form didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-04-05 10:29:51,415 basehttp 10032 5972 "POST /myapp4/user/add/ HTTP/1.1" 500 67534
+INFO 2024-04-05 10:34:48,395 autoreload 10032 5636 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 10:34:48,854 autoreload 14216 5492 Watching for file changes with StatReloader
+INFO 2024-04-05 10:34:49,968 basehttp 14216 2960 "POST /myapp4/user/add/ HTTP/1.1" 200 80
+INFO 2024-04-05 10:34:57,242 basehttp 14216 2960 "GET /myapp4/user/add/ HTTP/1.1" 200 885
+INFO 2024-04-05 10:35:17,156 basehttp 14216 2960 "POST /myapp4/user/add/ HTTP/1.1" 200 80
+INFO 2024-04-05 10:35:30,944 autoreload 14216 5492 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 10:35:31,422 autoreload 3784 1232 Watching for file changes with StatReloader
+ERROR 2024-04-05 10:35:32,977 log 3784 18392 Internal Server Error: /myapp4/user/add/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view myapp4.views.user_form didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-04-05 10:35:32,978 basehttp 3784 18392 "POST /myapp4/user/add/ HTTP/1.1" 500 67534
+INFO 2024-04-05 10:36:47,057 autoreload 3784 1232 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 10:36:47,522 autoreload 12396 15416 Watching for file changes with StatReloader
+INFO 2024-04-05 10:36:49,920 basehttp 12396 4668 "POST /myapp4/user/add/ HTTP/1.1" 200 930
+INFO 2024-04-05 10:36:51,212 basehttp 12396 4668 "POST /myapp4/user/add/ HTTP/1.1" 200 930
+INFO 2024-04-05 10:37:33,652 autoreload 12396 15416 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 10:37:34,073 autoreload 17212 17564 Watching for file changes with StatReloader
+INFO 2024-04-05 10:37:34,318 basehttp 17212 17460 "POST /myapp4/user/add/ HTTP/1.1" 200 930
+INFO 2024-04-05 10:37:36,413 basehttp 17212 17460 "POST /myapp4/user/add/ HTTP/1.1" 200 930
+INFO 2024-04-05 10:38:54,521 basehttp 17212 17460 "POST /myapp4/user/add/ HTTP/1.1" 200 930
+INFO 2024-04-05 10:42:26,159 autoreload 17212 17564 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 10:42:26,594 autoreload 15508 14968 Watching for file changes with StatReloader
+INFO 2024-04-05 10:42:26,909 basehttp 15508 13196 "POST /myapp4/user/add/ HTTP/1.1" 200 930
+INFO 2024-04-05 10:42:45,025 basehttp 15508 13196 "POST /myapp4/user/add/ HTTP/1.1" 200 930
+INFO 2024-04-05 10:44:35,012 autoreload 15508 14968 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 10:44:35,569 autoreload 19836 17868 Watching for file changes with StatReloader
+INFO 2024-04-05 10:44:40,404 basehttp 19836 11324 "POST /myapp4/user/add/ HTTP/1.1" 200 930
+INFO 2024-04-05 10:45:34,899 autoreload 19836 17868 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 10:45:35,339 autoreload 5820 11544 Watching for file changes with StatReloader
+INFO 2024-04-05 10:45:35,604 basehttp 5820 6168 "POST /myapp4/user/add/ HTTP/1.1" 200 930
+INFO 2024-04-05 10:47:25,326 autoreload 5820 11544 D:\GeekBrains\Django\Lessons\lectures\myapp4\forms.py changed, reloading.
+INFO 2024-04-05 10:47:25,737 autoreload 18132 16924 Watching for file changes with StatReloader
+INFO 2024-04-05 12:05:42,796 autoreload 18132 16924 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 12:05:43,420 autoreload 14924 13004 Watching for file changes with StatReloader
+INFO 2024-04-05 12:05:44,594 views 14924 17868 Получили name='Name', email='mail@mail.ru', age=23.
+INFO 2024-04-05 12:05:44,657 basehttp 14924 17868 "POST /myapp4/user/add/ HTTP/1.1" 200 930
+INFO 2024-04-05 12:05:45,787 views 14924 17868 Получили name='Name', email='mail@mail.ru', age=23.
+INFO 2024-04-05 12:05:45,790 basehttp 14924 17868 "POST /myapp4/user/add/ HTTP/1.1" 200 930
+INFO 2024-04-05 12:30:51,342 autoreload 14924 13004 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 12:30:51,796 autoreload 14196 18072 Watching for file changes with StatReloader
+INFO 2024-04-05 12:31:51,988 autoreload 14196 18072 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 12:31:52,394 autoreload 18992 7716 Watching for file changes with StatReloader
+INFO 2024-04-05 12:34:19,845 autoreload 18992 7716 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 12:34:20,278 autoreload 12076 15820 Watching for file changes with StatReloader
+INFO 2024-04-05 12:35:21,636 autoreload 12076 15820 D:\GeekBrains\Django\Lessons\lectures\myapp4\urls.py changed, reloading.
+INFO 2024-04-05 12:35:22,123 autoreload 19736 1628 Watching for file changes with StatReloader
+INFO 2024-04-05 12:35:56,484 basehttp 19736 5864 "GET /myapp4/forms HTTP/1.1" 301 0
+INFO 2024-04-05 12:35:56,518 basehttp 19736 16512 "GET /myapp4/forms/ HTTP/1.1" 200 1575
+INFO 2024-04-05 12:37:25,065 views 19736 16512 Получили form.cleaned_data={'name': 'name', 'email': 'mail@mail.ru', 'age': 23, 'height': 182.5, 'is_active': True, 'birthdate': datetime.date(2000, 4, 5), 'gender': 'M'}
+INFO 2024-04-05 12:37:25,068 basehttp 19736 16512 "POST /myapp4/forms/ HTTP/1.1" 200 1651
+INFO 2024-04-05 12:46:05,978 autoreload 19736 1628 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 12:46:06,444 autoreload 13276 16812 Watching for file changes with StatReloader
+INFO 2024-04-05 12:46:07,796 basehttp 13276 2960 "POST /myapp4/forms/ HTTP/1.1" 200 2350
+INFO 2024-04-05 12:47:04,166 views 13276 2960 Получили form.cleaned_data={'name': 'name', 'email': 'mail@mail.ru', 'age': 23, 'height': 182.5, 'is_active': True, 'birthdate': datetime.date(2000, 4, 5), 'gender': 'M', 'message': 'Какой-нибудь текст'}
+INFO 2024-04-05 12:47:04,170 basehttp 13276 2960 "POST /myapp4/forms/ HTTP/1.1" 200 2305
+INFO 2024-04-05 12:48:51,504 autoreload 13276 16812 D:\GeekBrains\Django\Lessons\lectures\myapp4\forms.py changed, reloading.
+INFO 2024-04-05 12:48:51,954 autoreload 10572 18672 Watching for file changes with StatReloader
+INFO 2024-04-05 12:48:53,119 views 10572 16540 Получили form.cleaned_data={'name': 'name', 'email': 'mail@mail.ru', 'age': 23, 'height': 182.5, 'is_active': True, 'birthdate': datetime.date(2000, 4, 5), 'gender': 'M', 'message': 'Какой-нибудь текст'}
+INFO 2024-04-05 12:48:53,132 basehttp 10572 16540 "POST /myapp4/forms/ HTTP/1.1" 200 2305
+INFO 2024-04-05 12:54:30,728 autoreload 10572 18672 D:\GeekBrains\Django\Lessons\lectures\myapp4\forms.py changed, reloading.
+INFO 2024-04-05 12:54:31,151 autoreload 12104 11628 Watching for file changes with StatReloader
+INFO 2024-04-05 12:56:32,407 autoreload 12104 11628 D:\GeekBrains\Django\Lessons\lectures\myapp4\models.py changed, reloading.
+INFO 2024-04-05 12:56:32,948 autoreload 10716 13400 Watching for file changes with StatReloader
+INFO 2024-04-05 13:06:50,346 autoreload 4956 8164 Watching for file changes with StatReloader
+INFO 2024-04-05 13:06:55,347 basehttp 4956 7160 "GET /myapp4/add_user HTTP/1.1" 301 0
+INFO 2024-04-05 13:06:55,357 basehttp 4956 18208 "GET /myapp4/add_user/ HTTP/1.1" 200 928
+INFO 2024-04-05 13:07:25,533 basehttp 4956 18208 "GET /myapp4/add_user/ HTTP/1.1" 200 947
+ERROR 2024-04-05 13:08:07,330 log 4956 18208 Internal Server Error: /myapp4/add_user/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py", line 39, in add_user
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 342, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Lessons\lectures\myapp4\forms.py", line 17, in clean_email
+    email = self.cleaned_data['']
+            ~~~~~~~~~~~~~~~~~^^^^
+KeyError: ''
+ERROR 2024-04-05 13:08:07,332 basehttp 4956 18208 "POST /myapp4/add_user/ HTTP/1.1" 500 86058
+ERROR 2024-04-05 13:08:21,426 log 4956 18208 Internal Server Error: /myapp4/add_user/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py", line 39, in add_user
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 342, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Lessons\lectures\myapp4\forms.py", line 17, in clean_email
+    email = self.cleaned_data['']
+            ~~~~~~~~~~~~~~~~~^^^^
+KeyError: ''
+ERROR 2024-04-05 13:08:21,428 basehttp 4956 18208 "POST /myapp4/add_user/ HTTP/1.1" 500 86058
+ERROR 2024-04-05 13:09:00,430 log 4956 18208 Internal Server Error: /myapp4/add_user/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py", line 39, in add_user
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 342, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Lessons\lectures\myapp4\forms.py", line 17, in clean_email
+    email = self.cleaned_data['']
+            ~~~~~~~~~~~~~~~~~^^^^
+KeyError: ''
+ERROR 2024-04-05 13:09:00,431 basehttp 4956 18208 "POST /myapp4/add_user/ HTTP/1.1" 500 86028
+INFO 2024-04-05 13:09:37,578 autoreload 4956 8164 D:\GeekBrains\Django\Lessons\lectures\myapp4\forms.py changed, reloading.
+INFO 2024-04-05 13:09:38,107 autoreload 17580 19288 Watching for file changes with StatReloader
+ERROR 2024-04-05 13:09:39,611 log 17580 19552 Internal Server Error: /myapp4/add_user/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py", line 39, in add_user
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\forms\forms.py", line 342, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Lessons\lectures\myapp4\forms.py", line 18, in clean_email
+    if not(email.endwith('vk.team')) or email.endwith('corp.mail.ru'):
+           ^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'endwith'
+ERROR 2024-04-05 13:09:39,614 basehttp 17580 19552 "POST /myapp4/add_user/ HTTP/1.1" 500 86491
+INFO 2024-04-05 13:10:12,028 autoreload 17580 19288 D:\GeekBrains\Django\Lessons\lectures\myapp4\forms.py changed, reloading.
+INFO 2024-04-05 13:10:12,487 autoreload 296 13924 Watching for file changes with StatReloader
+INFO 2024-04-05 13:10:13,237 basehttp 296 12896 "POST /myapp4/add_user/ HTTP/1.1" 200 1238
+INFO 2024-04-05 13:10:41,820 basehttp 296 12896 "POST /myapp4/add_user/ HTTP/1.1" 200 1122
+INFO 2024-04-05 13:11:23,923 autoreload 296 13924 D:\GeekBrains\Django\Lessons\lectures\myapp4\forms.py changed, reloading.
+INFO 2024-04-05 13:11:24,496 autoreload 3480 5032 Watching for file changes with StatReloader
+INFO 2024-04-05 13:11:42,944 basehttp 3480 12584 "POST /myapp4/add_user/ HTTP/1.1" 200 1122
+INFO 2024-04-05 13:11:44,118 basehttp 3480 12584 "POST /myapp4/add_user/ HTTP/1.1" 200 1122
+INFO 2024-04-05 13:11:44,577 basehttp 3480 12584 "POST /myapp4/add_user/ HTTP/1.1" 200 1122
+INFO 2024-04-05 13:12:21,805 autoreload 3480 5032 D:\GeekBrains\Django\Lessons\lectures\myapp4\forms.py changed, reloading.
+INFO 2024-04-05 13:12:22,271 autoreload 4452 18928 Watching for file changes with StatReloader
+INFO 2024-04-05 13:12:23,024 views 4452 9256 Получили: name='Валерий', email='mail@corp.mail.ru', age=23
+INFO 2024-04-05 13:12:23,035 basehttp 4452 9256 "POST /myapp4/add_user/ HTTP/1.1" 200 1019
+INFO 2024-04-05 13:16:30,532 autoreload 4452 18928 D:\GeekBrains\Django\Lessons\lectures\myapp4\forms.py changed, reloading.
+INFO 2024-04-05 13:16:31,007 autoreload 18488 5212 Watching for file changes with StatReloader
+INFO 2024-04-05 13:18:06,877 autoreload 18488 5212 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 13:18:07,336 autoreload 15620 12300 Watching for file changes with StatReloader
+INFO 2024-04-05 13:19:22,827 autoreload 15620 12300 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 13:19:23,268 autoreload 20008 6508 Watching for file changes with StatReloader
+INFO 2024-04-05 13:20:05,186 autoreload 20008 6508 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 13:20:05,626 autoreload 5896 18396 Watching for file changes with StatReloader
+INFO 2024-04-05 13:20:19,107 autoreload 5896 18396 D:\GeekBrains\Django\Lessons\lectures\myapp4\views.py changed, reloading.
+INFO 2024-04-05 13:20:19,605 autoreload 18416 13092 Watching for file changes with StatReloader
+INFO 2024-04-05 13:24:08,553 autoreload 18416 13092 D:\GeekBrains\Django\Lessons\lectures\myapp4\urls.py changed, reloading.
+INFO 2024-04-05 13:24:09,067 autoreload 6312 13044 Watching for file changes with StatReloader
+INFO 2024-04-05 13:24:53,809 basehttp 6312 8168 "GET /myapp4/upload HTTP/1.1" 301 0
+INFO 2024-04-05 13:24:53,823 basehttp 6312 19756 "GET /myapp4/upload/ HTTP/1.1" 200 660
+INFO 2024-04-05 13:25:05,519 basehttp 6312 19756 "POST /myapp4/upload/ HTTP/1.1" 200 660
