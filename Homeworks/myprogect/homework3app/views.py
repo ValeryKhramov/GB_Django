@@ -1,8 +1,12 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Product, Client, Order
-from django.http import HttpResponse
 from datetime import timedelta
 from django.utils.timezone import now
+import logging
+from .forms import ProductForm
+from django.core.files.storage import FileSystemStorage
+
+logger = logging.getLogger('myapp')
 
 
 # Базовая страница
@@ -87,6 +91,38 @@ def clear_clients(request):
 
 
 # Работа с ПРОДУКТАМИ
+def add_product(request):
+    context = {
+        'title': 'Добавление продукта через формы',
+        'message': '',
+        'form': '',
+    }
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        context['message'] = 'Ошибка в данных'
+        context['form'] = form
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            description = form.cleaned_data['description']
+            price = form.cleaned_data['price']
+            image = form.cleaned_data['image']
+            count_products = form.cleaned_data['count_products']
+            date_added = form.cleaned_data['date_added']
+
+            logger.info(f'Получили: {name=}, {description=}, {price=}')
+            product = Product(name=name, description=description, price=price, image=image, date_added=date_added,
+                              count_products=count_products)
+            product.save()
+            fs = FileSystemStorage()
+            fs.save(image.name, image)
+            context['message'] = 'Продукт успешно добавлен'
+    else:
+        form = ProductForm()
+        context['form'] = form
+        context['message'] = 'Заполните форму'
+    return render(request, 'homework3app/add_product.html', context)
+
+
 def read_products(request):
     products_list = list(Product.objects.all())
     context = {

@@ -13,6 +13,7 @@ urlpatterns = [
     path('orders_by_id/<int:pk>/', orders_by_id, name='orders_by_id'),
     # Работа с выводом и сортировкой заказов клиента
     path('orders_client_for_weak/<int:pk>/<int:time>', orders_client_by_time, name='orders_client_by_time'),
+    path('add_product/', add_product, name='add_product'),
 
 
 ]

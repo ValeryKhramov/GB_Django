@@ -2209,3 +2209,166 @@ INFO 2024-04-05 22:00:50,734 basehttp 20320 5032 "GET /homework3app/orders_clien
 INFO 2024-04-05 22:00:52,662 basehttp 20320 5032 "GET /homework3app/orders_client_for_weak/528/365 HTTP/1.1" 200 1814
 WARNING 2024-04-05 22:00:58,485 log 20320 5032 Not Found: /
 WARNING 2024-04-05 22:00:58,485 basehttp 20320 5032 "GET / HTTP/1.1" 404 2392
+INFO 2024-04-07 19:01:59,896 autoreload 5676 3260 Watching for file changes with StatReloader
+INFO 2024-04-07 19:19:03,161 autoreload 19132 12380 Watching for file changes with StatReloader
+WARNING 2024-04-07 19:19:05,097 log 19132 3592 Not Found: /
+WARNING 2024-04-07 19:19:05,098 basehttp 19132 3592 "GET / HTTP/1.1" 404 2392
+INFO 2024-04-07 19:19:09,042 basehttp 19132 3592 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-07 19:19:10,056 basehttp 19132 3592 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-07 19:19:17,308 basehttp 19132 3592 "GET /homework3app/add_product HTTP/1.1" 301 0
+INFO 2024-04-07 19:19:17,322 basehttp 19132 9872 "GET /homework3app/add_product/ HTTP/1.1" 200 1179
+INFO 2024-04-07 19:20:49,040 basehttp 19132 9872 "POST /homework3app/add_product/ HTTP/1.1" 200 1261
+INFO 2024-04-07 19:21:12,803 basehttp 19132 9872 "POST /homework3app/add_product/ HTTP/1.1" 200 1261
+INFO 2024-04-07 19:23:01,504 autoreload 19132 12380 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-07 19:23:01,919 autoreload 18520 9888 Watching for file changes with StatReloader
+INFO 2024-04-07 19:23:06,691 basehttp 18520 17732 "POST /homework3app/add_product/ HTTP/1.1" 200 1261
+INFO 2024-04-07 19:24:50,030 autoreload 18520 9888 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\forms.py changed, reloading.
+INFO 2024-04-07 19:24:50,460 autoreload 10432 4804 Watching for file changes with StatReloader
+INFO 2024-04-07 19:25:49,608 autoreload 10432 4804 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\forms.py changed, reloading.
+INFO 2024-04-07 19:25:50,024 autoreload 11004 12852 Watching for file changes with StatReloader
+INFO 2024-04-07 19:25:50,570 basehttp 11004 13716 "POST /homework3app/add_product/ HTTP/1.1" 200 1508
+INFO 2024-04-07 19:26:19,269 basehttp 11004 13716 "POST /homework3app/add_product/ HTTP/1.1" 200 1479
+INFO 2024-04-07 19:27:10,607 autoreload 11004 12852 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\forms.py changed, reloading.
+INFO 2024-04-07 19:27:11,031 autoreload 10508 8364 Watching for file changes with StatReloader
+INFO 2024-04-07 19:27:12,755 basehttp 10508 11496 "POST /homework3app/add_product/ HTTP/1.1" 200 1493
+INFO 2024-04-07 19:29:04,262 autoreload 10508 8364 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-07 19:29:04,672 autoreload 14496 13752 Watching for file changes with StatReloader
+INFO 2024-04-07 19:29:08,737 views 14496 7948 Получили: name='молоко', description='Кисломолочный продукт', price=Decimal('35')
+ERROR 2024-04-07 19:29:08,832 log 14496 7948 Internal Server Error: /homework3app/add_product/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: homework3app_product.count_products
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 112, in add_product
+    product.save()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: homework3app_product.count_products
+ERROR 2024-04-07 19:29:08,835 basehttp 14496 7948 "POST /homework3app/add_product/ HTTP/1.1" 500 153204
+INFO 2024-04-07 19:29:44,740 autoreload 14496 13752 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\models.py changed, reloading.
+INFO 2024-04-07 19:29:45,150 autoreload 15756 3836 Watching for file changes with StatReloader
+INFO 2024-04-07 19:29:50,573 views 15756 5500 Получили: name='молоко', description='Кисломолочный продукт', price=Decimal('35')
+ERROR 2024-04-07 19:29:50,609 log 15756 5500 Internal Server Error: /homework3app/add_product/
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: homework3app_product.date_added
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py", line 112, in add_product
+    product.save()
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GeekBrains\Django\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: homework3app_product.date_added
+ERROR 2024-04-07 19:29:50,613 basehttp 15756 5500 "POST /homework3app/add_product/ HTTP/1.1" 500 153068
+INFO 2024-04-07 19:31:00,824 autoreload 15756 3836 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\forms.py changed, reloading.
+INFO 2024-04-07 19:31:01,240 autoreload 10320 11572 Watching for file changes with StatReloader
+INFO 2024-04-07 19:33:11,685 autoreload 10320 11572 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\forms.py changed, reloading.
+INFO 2024-04-07 19:33:12,104 autoreload 12892 6764 Watching for file changes with StatReloader
+INFO 2024-04-07 19:33:16,630 basehttp 12892 19232 "POST /homework3app/add_product/ HTTP/1.1" 200 1886
+INFO 2024-04-07 19:34:31,854 autoreload 12892 6764 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-07 19:34:32,257 autoreload 15896 3428 Watching for file changes with StatReloader
+INFO 2024-04-07 19:34:55,885 autoreload 15896 3428 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\views.py changed, reloading.
+INFO 2024-04-07 19:34:56,271 autoreload 13024 16976 Watching for file changes with StatReloader
+INFO 2024-04-07 19:35:04,070 views 13024 18904 Получили: name='молоко', description='Кисломолочный продукт', price=Decimal('35')
+INFO 2024-04-07 19:35:04,087 basehttp 13024 18904 "POST /homework3app/add_product/ HTTP/1.1" 200 1776
+INFO 2024-04-07 19:35:43,907 views 13024 18904 Получили: name='молоко2', description='Кисломолочный продукт', price=Decimal('35')
+INFO 2024-04-07 19:35:43,915 basehttp 13024 18904 "POST /homework3app/add_product/ HTTP/1.1" 200 1777
