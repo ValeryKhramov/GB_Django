@@ -1,9 +1,8 @@
 from django.shortcuts import render
-from .models import Author
+from .models import Author, Coin, Cub, Numbers
 from random import choice, randint
 from .forms import GameChoiceForm, AuthorForm
 import logging
-
 
 logger = logging.getLogger('myapp')
 
@@ -27,7 +26,9 @@ def numbers(request, count):
     my_list = []
 
     for i in range(count):
-        my_list.append(randint(0,1000))
+        number = Numbers(result=randint(0, 1000))
+        number.save()
+        my_list.append(number)
 
     context = {'title': 'numbers',
                'my_list': my_list, }
@@ -38,7 +39,9 @@ def cub(request, count):
     my_list = []
 
     for i in range(count):
-        my_list.append(randint(1, 6))
+        cub = Cub(result=randint(1, 6))
+        cub.save()
+        my_list.append(cub)
 
     context = {'title': 'cub',
                'my_list': my_list, }
@@ -49,7 +52,10 @@ def coin(request, count):
     my_list = []
 
     for i in range(count):
-        my_list.append(choice(['Орёл', 'Решка']))
+        coin = Coin(result=choice(['Орёл', 'Решка']))
+        coin.save()
+        my_list.append(coin)
+
 
     context = {'title': 'coin',
                'my_list': my_list, }
