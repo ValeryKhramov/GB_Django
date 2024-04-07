@@ -113,8 +113,8 @@ def add_product(request):
             product = Product(name=name, description=description, price=price, image=image, date_added=date_added,
                               count_products=count_products)
             product.save()
-            fs = FileSystemStorage()
-            fs.save(image.name, image)
+            # fs = FileSystemStorage()
+            # fs.save(image.name, image)
             context['message'] = 'Продукт успешно добавлен'
     else:
         form = ProductForm()

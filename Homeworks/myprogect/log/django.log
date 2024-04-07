@@ -2372,3 +2372,13 @@ INFO 2024-04-07 19:35:04,070 views 13024 18904 Получили: name='молоко', descript
 INFO 2024-04-07 19:35:04,087 basehttp 13024 18904 "POST /homework3app/add_product/ HTTP/1.1" 200 1776
 INFO 2024-04-07 19:35:43,907 views 13024 18904 Получили: name='молоко2', description='Кисломолочный продукт', price=Decimal('35')
 INFO 2024-04-07 19:35:43,915 basehttp 13024 18904 "POST /homework3app/add_product/ HTTP/1.1" 200 1777
+INFO 2024-04-07 20:20:05,489 autoreload 11220 11208 Watching for file changes with StatReloader
+WARNING 2024-04-07 20:20:07,144 log 11220 4072 Not Found: /
+WARNING 2024-04-07 20:20:07,145 basehttp 11220 4072 "GET / HTTP/1.1" 404 2392
+WARNING 2024-04-07 20:20:07,221 log 11220 4072 Not Found: /favicon.ico
+WARNING 2024-04-07 20:20:07,222 basehttp 11220 4072 "GET /favicon.ico HTTP/1.1" 404 2443
+INFO 2024-04-07 20:20:11,073 basehttp 11220 4072 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-07 20:20:12,464 basehttp 11220 4072 "GET /homework3app/ HTTP/1.1" 200 542
+INFO 2024-04-07 20:20:19,650 basehttp 11220 4072 "GET /homework3app/add_product/ HTTP/1.1" 200 1675
+INFO 2024-04-07 20:20:40,150 views 11220 4072 Получили: name='Мясо', description='Свежее мясо', price=Decimal('350')
+INFO 2024-04-07 20:20:40,163 basehttp 11220 4072 "POST /homework3app/add_product/ HTTP/1.1" 200 1753
