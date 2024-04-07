@@ -2382,3 +2382,91 @@ INFO 2024-04-07 20:20:12,464 basehttp 11220 4072 "GET /homework3app/ HTTP/1.1" 2
 INFO 2024-04-07 20:20:19,650 basehttp 11220 4072 "GET /homework3app/add_product/ HTTP/1.1" 200 1675
 INFO 2024-04-07 20:20:40,150 views 11220 4072 Получили: name='Мясо', description='Свежее мясо', price=Decimal('350')
 INFO 2024-04-07 20:20:40,163 basehttp 11220 4072 "POST /homework3app/add_product/ HTTP/1.1" 200 1753
+INFO 2024-04-07 20:27:15,944 autoreload 2112 13384 Watching for file changes with StatReloader
+WARNING 2024-04-07 20:27:16,933 log 2112 2016 Not Found: /
+WARNING 2024-04-07 20:27:16,933 basehttp 2112 2016 "GET / HTTP/1.1" 404 2392
+INFO 2024-04-07 20:27:22,176 basehttp 2112 2016 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-04-07 20:27:22,286 basehttp 2112 2016 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2024-04-07 20:27:52,350 autoreload 2112 13384 D:\GeekBrains\Django\Homeworks\myprogect\myprogect\settings.py changed, reloading.
+INFO 2024-04-07 20:27:53,007 autoreload 7112 3372 Watching for file changes with StatReloader
+INFO 2024-04-07 20:27:55,195 basehttp 7112 13196 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO 2024-04-07 20:28:17,820 basehttp 7112 13196 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-04-07 20:28:17,859 basehttp 7112 13196 "GET /admin/ HTTP/1.1" 200 7590
+INFO 2024-04-07 20:28:23,337 basehttp 7112 13196 "GET /admin/homework3app/product/ HTTP/1.1" 200 18867
+INFO 2024-04-07 20:28:23,392 basehttp 7112 13196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 20:28:34,922 basehttp 7112 13196 "GET /admin/homework3app/client/ HTTP/1.1" 200 15612
+INFO 2024-04-07 20:28:34,937 basehttp 7112 13196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 20:28:43,977 basehttp 7112 13196 "GET /admin/homework3app/order/ HTTP/1.1" 200 50053
+INFO 2024-04-07 20:28:43,990 basehttp 7112 13196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 20:30:51,946 autoreload 7112 3372 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 20:30:52,625 autoreload 14808 12184 Watching for file changes with StatReloader
+INFO 2024-04-07 22:07:38,909 basehttp 14808 4588 "GET /admin/homework3app/order/add/ HTTP/1.1" 200 16639
+INFO 2024-04-07 22:07:38,937 basehttp 14808 4588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 22:08:02,338 basehttp 14808 4588 "GET /admin/homework3app/order/ HTTP/1.1" 200 50053
+INFO 2024-04-07 22:08:04,551 basehttp 14808 4588 "GET /admin/homework3app/order/50/change/ HTTP/1.1" 200 17573
+INFO 2024-04-07 22:08:04,564 basehttp 14808 4588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 22:08:20,639 basehttp 14808 4588 "GET /admin/homework3app/product/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7785
+INFO 2024-04-07 22:08:20,654 basehttp 14808 4588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 22:08:37,046 basehttp 14808 4588 "POST /admin/homework3app/order/50/change/ HTTP/1.1" 302 0
+INFO 2024-04-07 22:08:37,131 basehttp 14808 4588 "GET /admin/homework3app/order/ HTTP/1.1" 200 50488
+INFO 2024-04-07 22:08:37,148 basehttp 14808 4588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 22:12:34,646 autoreload 14808 12184 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:12:35,571 autoreload 16788 7932 Watching for file changes with StatReloader
+INFO 2024-04-07 22:13:30,109 autoreload 16788 7932 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:13:30,726 autoreload 15652 12848 Watching for file changes with StatReloader
+INFO 2024-04-07 22:14:46,739 autoreload 15652 12848 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:14:47,361 autoreload 15996 16728 Watching for file changes with StatReloader
+INFO 2024-04-07 22:16:38,241 autoreload 15996 16728 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:16:38,891 autoreload 8216 13656 Watching for file changes with StatReloader
+INFO 2024-04-07 22:16:50,485 autoreload 8216 13656 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:16:51,111 autoreload 16068 4608 Watching for file changes with StatReloader
+INFO 2024-04-07 22:17:31,343 autoreload 16068 4608 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:17:31,982 autoreload 2172 13832 Watching for file changes with StatReloader
+INFO 2024-04-07 22:17:41,550 autoreload 2172 13832 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:17:42,168 autoreload 1672 17380 Watching for file changes with StatReloader
+INFO 2024-04-07 22:17:45,607 autoreload 1672 17380 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:17:46,274 autoreload 15292 16144 Watching for file changes with StatReloader
+INFO 2024-04-07 22:18:06,124 autoreload 15292 16144 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:18:06,747 autoreload 4044 17116 Watching for file changes with StatReloader
+INFO 2024-04-07 22:18:57,212 autoreload 4044 17116 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:18:57,983 autoreload 11568 2624 Watching for file changes with StatReloader
+INFO 2024-04-07 22:19:14,708 autoreload 11568 2624 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:19:15,320 autoreload 15436 17068 Watching for file changes with StatReloader
+INFO 2024-04-07 22:19:33,035 autoreload 15436 17068 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:19:33,709 autoreload 11700 16640 Watching for file changes with StatReloader
+INFO 2024-04-07 22:20:42,574 autoreload 11700 16640 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:20:43,214 autoreload 3228 16428 Watching for file changes with StatReloader
+INFO 2024-04-07 22:21:10,144 autoreload 3228 16428 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:21:10,732 autoreload 15860 12856 Watching for file changes with StatReloader
+INFO 2024-04-07 22:22:11,392 autoreload 15860 12856 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:22:12,127 autoreload 1896 11552 Watching for file changes with StatReloader
+INFO 2024-04-07 22:23:02,544 autoreload 1896 11552 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:23:03,171 autoreload 7188 10168 Watching for file changes with StatReloader
+INFO 2024-04-07 22:23:11,732 autoreload 7188 10168 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:23:12,362 autoreload 11148 8064 Watching for file changes with StatReloader
+INFO 2024-04-07 22:23:17,974 basehttp 11148 2748 "GET /admin/homework3app/client/ HTTP/1.1" 200 16118
+INFO 2024-04-07 22:23:17,989 basehttp 11148 2748 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 22:23:21,763 basehttp 11148 2748 "GET /admin/homework3app/product/ HTTP/1.1" 200 20853
+INFO 2024-04-07 22:23:21,779 basehttp 11148 2748 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 22:23:25,524 basehttp 11148 2748 "GET /admin/homework3app/order/ HTTP/1.1" 200 50053
+INFO 2024-04-07 22:23:25,537 basehttp 11148 2748 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 22:24:05,963 basehttp 11148 2748 "GET /admin/homework3app/product/ HTTP/1.1" 200 20853
+INFO 2024-04-07 22:24:05,978 basehttp 11148 2748 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 22:24:48,394 basehttp 11148 2748 "GET /admin/homework3app/client/ HTTP/1.1" 200 16118
+INFO 2024-04-07 22:24:48,410 basehttp 11148 2748 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 22:24:49,548 basehttp 11148 2748 "GET /admin/homework3app/client/531/change/ HTTP/1.1" 200 13048
+INFO 2024-04-07 22:24:49,569 basehttp 11148 2748 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 22:31:42,063 autoreload 11148 8064 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:31:42,694 autoreload 16984 14704 Watching for file changes with StatReloader
+INFO 2024-04-07 22:31:47,703 basehttp 16984 3600 "GET /admin/homework3app/product/ HTTP/1.1" 200 20853
+INFO 2024-04-07 22:31:47,720 basehttp 16984 3600 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 22:31:49,051 basehttp 16984 3600 "GET /admin/homework3app/product/323/change/ HTTP/1.1" 200 13698
+INFO 2024-04-07 22:31:49,067 basehttp 16984 3600 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 22:32:45,718 autoreload 16984 14704 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:32:46,473 autoreload 16244 2188 Watching for file changes with StatReloader
+INFO 2024-04-07 22:33:36,713 autoreload 16244 2188 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:33:37,372 autoreload 9356 11940 Watching for file changes with StatReloader
+INFO 2024-04-07 22:33:38,863 basehttp 9356 4828 "GET /admin/homework3app/product/ HTTP/1.1" 200 20952
+INFO 2024-04-07 22:33:38,883 basehttp 9356 4828 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-07 22:34:12,742 autoreload 9356 11940 D:\GeekBrains\Django\Homeworks\myprogect\homework3app\admin.py changed, reloading.
+INFO 2024-04-07 22:34:13,412 autoreload 6724 8628 Watching for file changes with StatReloader
