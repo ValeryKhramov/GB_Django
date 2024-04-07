@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <p><h1  style="text-align:center;">Домашняя работа №4</h1></p>
+    </header>
+    {% block content %}
+        <div style="text-align:center;">
+            <h3>Здесь будет отображаться необходимый контент!</h3>
+        </div>
+    {% endblock %}
+    <footer>
+        <p style="text-align:center;">Все права защищены!</p>
+    </footer>
+
+</body>
+</html>
