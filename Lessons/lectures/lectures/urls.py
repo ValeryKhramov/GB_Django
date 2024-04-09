@@ -25,4 +25,6 @@ urlpatterns = [
     path('', index),
     path('myapp4/', include('myapp4.urls')),
     path('myapp5/', include('myapp5.urls')),
+    # path('__debug__/', include("debug_toolbar.urls")),
+    path('myapp6/', include('myapp6.urls')),
 ]

@@ -776,3 +776,114 @@ INFO 2024-04-05 17:27:55,771 autoreload 9392 16128 Watching for file changes wit
 INFO 2024-04-05 17:27:58,193 basehttp 9392 12528 "GET /admin/myapp5/product/4/change/?_changelist_filters=q%3D HTTP/1.1" 200 15850
 INFO 2024-04-05 17:27:58,205 basehttp 9392 12528 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
 INFO 2024-04-05 17:27:58,245 basehttp 9392 16972 "GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+INFO 2024-04-07 15:54:07,474 autoreload 13672 3092 Watching for file changes with StatReloader
+INFO 2024-04-07 15:54:09,030 basehttp 13672 16588 "GET / HTTP/1.1" 200 315
+INFO 2024-04-07 15:54:12,805 basehttp 13672 16588 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-04-07 15:54:12,872 basehttp 13672 16588 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO 2024-04-07 15:54:12,971 basehttp 13672 16588 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-04-07 15:54:12,971 basehttp 13672 1228 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-04-07 15:54:12,971 basehttp 13672 14996 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-04-07 15:54:12,990 basehttp 13672 14996 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2024-04-07 15:54:12,992 basehttp 13672 1228 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-04-07 15:54:12,992 basehttp 13672 14996 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-04-07 15:54:12,997 basehttp 13672 14996 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-04-07 15:54:13,814 basehttp 13672 14996 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-04-07 15:54:13,819 basehttp 13672 14996 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO 2024-04-08 22:41:11,790 autoreload 10748 10324 Watching for file changes with StatReloader
+INFO 2024-04-08 22:44:30,556 autoreload 10748 10324 D:\GeekBrains\Django\Lessons\lectures\lectures\settings.py changed, reloading.
+INFO 2024-04-08 22:44:31,327 autoreload 3864 7552 Watching for file changes with StatReloader
+INFO 2024-04-08 22:44:35,505 basehttp 3864 16008 "GET / HTTP/1.1" 200 10121
+INFO 2024-04-08 22:44:35,515 basehttp 3864 16008 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2024-04-08 22:44:35,515 basehttp 3864 15048 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13578
+INFO 2024-04-08 22:44:35,563 basehttp 3864 16008 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2024-04-08 22:44:35,588 basehttp 3864 16008 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+WARNING 2024-04-08 22:44:35,706 log 3864 16008 Not Found: /favicon.ico
+WARNING 2024-04-08 22:44:35,710 basehttp 3864 16008 "GET /favicon.ico HTTP/1.1" 404 12542
+INFO 2024-04-08 22:45:20,414 basehttp 3864 16008 "GET /__debug__/render_panel/?store_id=ad7bee58873c4853bcb13053eb61bf82&panel_id=HistoryPanel HTTP/1.1" 200 4150
+INFO 2024-04-08 22:45:20,421 basehttp 3864 16008 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3515
+INFO 2024-04-08 22:45:25,067 basehttp 3864 16008 "GET /__debug__/history_sidebar/?store_id=a3dca87cbcc04ca28060b40bab978fe3&exclude_history=True HTTP/1.1" 200 10760
+INFO 2024-04-08 22:45:26,019 basehttp 3864 16008 "GET /__debug__/history_sidebar/?store_id=ad7bee58873c4853bcb13053eb61bf82&exclude_history=True HTTP/1.1" 200 10770
+INFO 2024-04-08 22:45:26,821 basehttp 3864 16008 "GET /__debug__/history_sidebar/?store_id=a3dca87cbcc04ca28060b40bab978fe3&exclude_history=True HTTP/1.1" 200 10760
+INFO 2024-04-08 22:45:27,547 basehttp 3864 16008 "GET /__debug__/history_sidebar/?store_id=ad7bee58873c4853bcb13053eb61bf82&exclude_history=True HTTP/1.1" 200 10770
+INFO 2024-04-08 22:45:28,291 basehttp 3864 16008 "GET /__debug__/history_sidebar/?store_id=a3dca87cbcc04ca28060b40bab978fe3&exclude_history=True HTTP/1.1" 200 10760
+INFO 2024-04-08 22:45:29,282 basehttp 3864 16008 "GET /__debug__/history_sidebar/?store_id=ad7bee58873c4853bcb13053eb61bf82&exclude_history=True HTTP/1.1" 200 10770
+INFO 2024-04-08 22:45:32,513 basehttp 3864 16008 "GET /__debug__/render_panel/?store_id=ad7bee58873c4853bcb13053eb61bf82&panel_id=VersionsPanel HTTP/1.1" 200 760
+INFO 2024-04-08 22:45:36,926 basehttp 3864 16008 "GET /__debug__/render_panel/?store_id=ad7bee58873c4853bcb13053eb61bf82&panel_id=SettingsPanel HTTP/1.1" 200 26713
+INFO 2024-04-08 22:45:38,447 basehttp 3864 16008 "GET /__debug__/render_panel/?store_id=ad7bee58873c4853bcb13053eb61bf82&panel_id=HeadersPanel HTTP/1.1" 200 5214
+INFO 2024-04-08 22:45:39,871 basehttp 3864 16008 "GET /__debug__/render_panel/?store_id=ad7bee58873c4853bcb13053eb61bf82&panel_id=RequestPanel HTTP/1.1" 200 1606
+INFO 2024-04-08 22:45:42,490 basehttp 3864 16008 "GET /__debug__/render_panel/?store_id=ad7bee58873c4853bcb13053eb61bf82&panel_id=SQLPanel HTTP/1.1" 200 428
+INFO 2024-04-08 22:53:23,037 autoreload 3864 7552 D:\GeekBrains\Django\Lessons\lectures\myapp6\models.py changed, reloading.
+INFO 2024-04-08 22:54:09,829 autoreload 16128 16380 Watching for file changes with StatReloader
+INFO 2024-04-08 23:05:02,199 autoreload 12492 8500 Watching for file changes with StatReloader
+INFO 2024-04-08 23:05:05,600 basehttp 12492 14288 "GET / HTTP/1.1" 200 10120
+INFO 2024-04-08 23:05:05,621 basehttp 12492 14288 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-04-08 23:05:05,621 basehttp 12492 4412 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-04-08 23:05:05,728 basehttp 12492 14288 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-04-08 23:05:05,749 basehttp 12492 14288 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-04-08 23:05:11,059 basehttp 12492 14288 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-04-08 23:05:11,167 basehttp 12492 14288 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 14191
+INFO 2024-04-08 23:05:11,795 basehttp 12492 14288 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-04-08 23:05:11,829 basehttp 12492 14288 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 14190
+INFO 2024-04-08 23:05:25,451 basehttp 12492 14288 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-04-08 23:05:25,589 basehttp 12492 14288 "GET /admin/ HTTP/1.1" 200 19148
+INFO 2024-04-08 23:05:30,958 basehttp 12492 14288 "GET /admin/myapp6/category/ HTTP/1.1" 200 19811
+INFO 2024-04-08 23:05:31,032 basehttp 12492 14288 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-08 23:05:32,473 basehttp 12492 14288 "GET /admin/ HTTP/1.1" 200 19147
+INFO 2024-04-08 23:05:33,734 basehttp 12492 14288 "GET /admin/myapp5/category/ HTTP/1.1" 200 22008
+INFO 2024-04-08 23:05:33,766 basehttp 12492 14288 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-08 23:05:36,385 basehttp 12492 14288 "GET /admin/myapp5/category/1/change/ HTTP/1.1" 200 20896
+INFO 2024-04-08 23:05:36,424 basehttp 12492 14288 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-08 23:05:38,179 basehttp 12492 14288 "GET /admin/myapp5/category/ HTTP/1.1" 200 22008
+INFO 2024-04-08 23:05:40,891 basehttp 12492 14288 "GET /admin/myapp6/category/ HTTP/1.1" 200 19810
+INFO 2024-04-08 23:05:40,927 basehttp 12492 14288 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-08 23:05:42,108 basehttp 12492 14288 "GET /admin/myapp6/category/add/ HTTP/1.1" 200 20648
+INFO 2024-04-08 23:05:42,144 basehttp 12492 14288 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-08 23:05:48,240 basehttp 12492 14288 "POST /admin/myapp6/category/add/ HTTP/1.1" 302 0
+INFO 2024-04-08 23:05:48,272 basehttp 12492 14288 "GET /admin/myapp6/category/add/ HTTP/1.1" 200 20940
+INFO 2024-04-08 23:05:48,309 basehttp 12492 14288 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-08 23:05:52,513 basehttp 12492 14288 "POST /admin/myapp6/category/add/ HTTP/1.1" 302 0
+INFO 2024-04-08 23:05:52,570 basehttp 12492 14288 "GET /admin/myapp6/category/add/ HTTP/1.1" 200 20934
+INFO 2024-04-08 23:05:52,602 basehttp 12492 14288 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-08 23:05:56,022 basehttp 12492 14288 "POST /admin/myapp6/category/add/ HTTP/1.1" 302 0
+INFO 2024-04-08 23:05:56,086 basehttp 12492 14288 "GET /admin/myapp6/category/ HTTP/1.1" 200 22224
+INFO 2024-04-08 23:05:56,121 basehttp 12492 14288 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-08 23:05:59,085 basehttp 12492 14288 "POST /admin/logout/ HTTP/1.1" 200 13645
+INFO 2024-04-09 07:41:54,094 autoreload 13816 16260 Watching for file changes with StatReloader
+INFO 2024-04-09 07:42:15,108 autoreload 13816 16260 D:\GeekBrains\Django\Lessons\lectures\myapp6\urls.py changed, reloading.
+INFO 2024-04-09 07:42:15,839 autoreload 4924 12756 Watching for file changes with StatReloader
+INFO 2024-04-09 07:42:20,858 basehttp 4924 8460 "GET / HTTP/1.1" 200 10120
+INFO 2024-04-09 07:42:20,923 basehttp 4924 8460 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-04-09 07:42:20,923 basehttp 4924 13700 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-04-09 07:42:21,087 basehttp 4924 13700 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-04-09 07:42:21,107 basehttp 4924 13700 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-04-09 07:42:31,680 basehttp 4924 13700 "GET /myapp6/db HTTP/1.1" 301 0
+INFO 2024-04-09 07:42:31,846 basehttp 4924 8460 "GET /myapp6/db/ HTTP/1.1" 200 10209
+INFO 2024-04-09 07:43:12,982 basehttp 4924 8460 "GET /myapp6/db/ HTTP/1.1" 200 10208
+INFO 2024-04-09 07:44:29,841 basehttp 4924 8460 "GET /__debug__/render_panel/?store_id=ef04953c9d934a27a4f6c9efe2616624&panel_id=SQLPanel HTTP/1.1" 200 4786
+INFO 2024-04-09 07:44:38,037 basehttp 4924 8460 "GET /myapp6/view HTTP/1.1" 301 0
+INFO 2024-04-09 07:44:38,219 basehttp 4924 16984 "GET /myapp6/view/ HTTP/1.1" 200 10228
+INFO 2024-04-09 07:46:06,151 basehttp 4924 16984 "GET /myapp6/template HTTP/1.1" 301 0
+INFO 2024-04-09 07:46:06,382 basehttp 4924 17136 "GET /myapp6/template/ HTTP/1.1" 200 10212
+INFO 2024-04-09 07:46:08,507 basehttp 4924 17136 "GET /__debug__/render_panel/?store_id=68103d12595f4efd831e92545a064d47&panel_id=SQLPanel HTTP/1.1" 200 23068
+INFO 2024-04-09 07:46:40,644 basehttp 4924 17136 "GET /myapp6/db/ HTTP/1.1" 200 10651
+INFO 2024-04-09 07:46:42,879 basehttp 4924 17136 "GET /__debug__/render_panel/?store_id=e0470b854dd44384b77478d2380e0f18&panel_id=SQLPanel HTTP/1.1" 200 5174
+INFO 2024-04-09 07:47:25,279 basehttp 4924 17136 "GET /__debug__/render_panel/?store_id=e0470b854dd44384b77478d2380e0f18&panel_id=HistoryPanel HTTP/1.1" 200 15670
+INFO 2024-04-09 07:47:25,285 basehttp 4924 17136 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 304 0
+INFO 2024-04-09 09:00:53,567 basehttp 4924 2744 "GET /__debug__/history_sidebar/?store_id=68103d12595f4efd831e92545a064d47&exclude_history=True HTTP/1.1" 200 10784
+INFO 2024-04-09 09:00:55,877 basehttp 4924 2744 "GET /__debug__/history_sidebar/?store_id=e0470b854dd44384b77478d2380e0f18&exclude_history=True HTTP/1.1" 200 11362
+INFO 2024-04-09 09:03:13,970 basehttp 4924 2744 "GET /__debug__/history_sidebar/?store_id=68103d12595f4efd831e92545a064d47&exclude_history=True HTTP/1.1" 200 10784
+INFO 2024-04-09 09:03:23,232 basehttp 4924 2744 "GET /__debug__/render_panel/?store_id=68103d12595f4efd831e92545a064d47&panel_id=TemplatesPanel HTTP/1.1" 200 7128
+INFO 2024-04-09 09:03:48,874 basehttp 4924 2744 "GET /myapp6/db/ HTTP/1.1" 200 10651
+INFO 2024-04-09 09:03:48,889 basehttp 4924 2744 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-04-09 09:03:48,889 basehttp 4924 7704 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-04-09 09:03:48,901 basehttp 4924 7704 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-04-09 09:03:48,901 basehttp 4924 2744 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-04-09 09:03:50,483 basehttp 4924 2744 "GET /__debug__/render_panel/?store_id=53447716ae4640eda2622729db745fa2&panel_id=ProfilingPanel HTTP/1.1" 200 34077
+INFO 2024-04-09 09:15:11,797 autoreload 4924 12756 D:\GeekBrains\Django\Lessons\lectures\lectures\settings.py changed, reloading.
+INFO 2024-04-09 09:15:12,456 autoreload 16152 16136 Watching for file changes with StatReloader
+INFO 2024-04-09 09:17:20,697 autoreload 16152 16136 D:\GeekBrains\Django\Lessons\lectures\lectures\settings.py changed, reloading.
+INFO 2024-04-09 09:17:21,508 autoreload 15920 11640 Watching for file changes with StatReloader
+INFO 2024-04-09 09:26:06,731 autoreload 15920 11640 D:\GeekBrains\Django\Lessons\lectures\lectures\settings.py changed, reloading.
+INFO 2024-04-09 09:26:07,197 autoreload 15528 14716 Watching for file changes with StatReloader
+INFO 2024-04-09 09:28:27,332 autoreload 15528 14716 D:\GeekBrains\Django\Lessons\lectures\lectures\settings.py changed, reloading.
+INFO 2024-04-09 09:28:27,764 autoreload 9460 9484 Watching for file changes with StatReloader
