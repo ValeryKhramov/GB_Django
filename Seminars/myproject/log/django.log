@@ -1797,3 +1797,17 @@ INFO 2024-04-07 17:04:11,979 basehttp 16376 19208 "GET /admin/jsi18n/ HTTP/1.1" 
 INFO 2024-04-07 17:04:22,923 basehttp 16376 19208 "POST /admin/myapp3/author/ HTTP/1.1" 302 0
 INFO 2024-04-07 17:04:22,935 basehttp 16376 19208 "GET /admin/myapp3/author/ HTTP/1.1" 200 14038
 INFO 2024-04-07 17:04:22,944 basehttp 16376 19208 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-04-10 14:23:58,052 autoreload 10832 7468 Watching for file changes with StatReloader
+WARNING 2024-04-10 14:24:57,223 log 10832 4592 Not Found: /
+WARNING 2024-04-10 14:24:57,223 basehttp 10832 4592 "GET / HTTP/1.1" 404 12722
+INFO 2024-04-10 14:24:57,238 basehttp 10832 4592 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-04-10 14:24:57,238 basehttp 10832 7640 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-04-10 14:24:57,279 basehttp 10832 7640 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-04-10 14:24:57,312 basehttp 10832 7640 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+WARNING 2024-04-10 14:24:57,378 log 10832 7640 Not Found: /favicon.ico
+WARNING 2024-04-10 14:24:57,379 basehttp 10832 7640 "GET /favicon.ico HTTP/1.1" 404 12783
+WARNING 2024-04-10 14:25:06,723 log 10832 7640 Not Found: /myapp3/
+WARNING 2024-04-10 14:25:06,724 basehttp 10832 7640 "GET /myapp3/ HTTP/1.1" 404 14124
+INFO 2024-04-10 14:25:13,897 basehttp 10832 7640 "GET /myapp3/game_choice/ HTTP/1.1" 200 11623
+INFO 2024-04-10 14:33:11,654 autoreload 10832 7468 D:\GeekBrains\Django\Seminars\myproject\myproject\settings.py changed, reloading.
+INFO 2024-04-10 14:33:12,640 autoreload 14724 23140 Watching for file changes with StatReloader
